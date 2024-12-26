@@ -1,0 +1,31 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>JavaScript Advanced - Tag - Nguyễn Việt Anh Blog</title>
+        <link>//localhost:1313/tags/javascript-advanced/</link>
+        <description>JavaScript Advanced - Tag - Nguyễn Việt Anh Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 18:00:00 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/tags/javascript-advanced/" rel="self" type="application/rss+xml" /><item>
+    <title>Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</title>
+    <link>//localhost:1313/posts/javascript-async/</link>
+    <pubDate>Thu, 26 Dec 2024 17:00:00 &#43;0800</pubDate>
+    <author>ChatGPT</author>
+    <guid>//localhost:1313/posts/javascript-async/</guid>
+    <description><![CDATA[<h1 id="chuyên-sâu-về-lập-trình-bất-đồng-bộ-trong-javascript">Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</h1>
+<p>Lập trình bất đồng bộ là một phần quan trọng của JavaScript, đặc biệt trong việc xử lý các tác vụ như gọi API, đọc/ghi file, hoặc giao tiếp với cơ sở dữ liệu. Hiểu rõ cách thức hoạt động của bất đồng bộ sẽ giúp bạn viết mã hiệu quả và tránh các lỗi khó xử lý.</p>
+<hr>
+<h2 id="lập-trình-bất-đồng-bộ-là-gì">Lập trình bất đồng bộ là gì?</h2>
+<p>Lập trình bất đồng bộ cho phép các tác vụ mất thời gian được thực thi mà không chặn luồng chính (main thread). Điều này giúp giao diện người dùng vẫn mượt mà trong khi các tác vụ nền đang chạy.</p>]]></description>
+</item>
+<item>
+    <title>Chuyên sâu về Event Loop trong JavaScript</title>
+    <link>//localhost:1313/posts/javascript-loop/</link>
+    <pubDate>Thu, 26 Dec 2024 18:00:00 &#43;0800</pubDate>
+    <author>ChatGPT</author>
+    <guid>//localhost:1313/posts/javascript-loop/</guid>
+    <description><![CDATA[<h1 id="chuyên-sâu-về-event-loop-trong-javascript">Chuyên sâu về Event Loop trong JavaScript</h1>
+<p>Event Loop là trái tim của JavaScript, giúp quản lý và điều phối các tác vụ bất đồng bộ. Hiểu rõ về Event Loop là chìa khóa để giải thích tại sao một số đoạn mã JavaScript lại hoạt động như vậy.</p>
+<hr>
+<h2 id="event-loop-là-gì">Event Loop là gì?</h2>
+<p>JavaScript là một ngôn ngữ đơn luồng (<strong>single-threaded</strong>), nhưng nó có thể xử lý nhiều tác vụ bất đồng bộ nhờ cơ chế Event Loop. Event Loop chịu trách nhiệm:</p>]]></description>
+</item>
+</channel>
+</rss>

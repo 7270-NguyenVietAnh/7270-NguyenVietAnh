@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>JavaJava - Category - Nguyễn Việt Anh Blog</title>
+        <link>//localhost:1313/categories/javajava/</link>
+        <description>JavaJava - Category - Nguyễn Việt Anh Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 12:27:40 &#43;0700</lastBuildDate><atom:link href="//localhost:1313/categories/javajava/" rel="self" type="application/rss+xml" /><item>
+    <title>Java Cơ BảnBản</title>
+    <link>//localhost:1313/posts/java-basic/index.vi/</link>
+    <pubDate>Thu, 26 Dec 2024 12:27:40 &#43;0700</pubDate>
+    <author>ChatGPTChatGPT</author>
+    <guid>//localhost:1313/posts/java-basic/index.vi/</guid>
+    <description><![CDATA[Java cơ bản]]></description>
+</item>
+</channel>
+</rss>

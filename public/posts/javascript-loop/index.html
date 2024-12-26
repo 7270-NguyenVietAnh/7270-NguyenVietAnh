@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Chuyên sâu về Event Loop trong JavaScript - Nguyễn Việt Anh Blog</title><meta name="Description" content="Khám phá cơ chế Event Loop trong JavaScript, giúp hiểu rõ cách xử lý bất đồng bộ và ưu tiên thực thi trong ngôn ngữ này."><meta property="og:url" content="//localhost:1313/posts/javascript-loop/">
+  <meta property="og:site_name" content="Nguyễn Việt Anh Blog">
+  <meta property="og:title" content="Chuyên sâu về Event Loop trong JavaScript">
+  <meta property="og:description" content="Khám phá cơ chế Event Loop trong JavaScript, giúp hiểu rõ cách xử lý bất đồng bộ và ưu tiên thực thi trong ngôn ngữ này.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-26T18:00:00+08:00">
+    <meta property="article:modified_time" content="2024-12-26T18:00:00+08:00">
+    <meta property="article:tag" content="JavaScript">
+    <meta property="article:tag" content="Event Loop">
+    <meta property="article:tag" content="JavaScript Advanced">
+    <meta property="og:image" content="//localhost:1313/posts/javascript-loop/featured-image.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="//localhost:1313/posts/javascript-loop/featured-image.jpg">
+  <meta name="twitter:title" content="Chuyên sâu về Event Loop trong JavaScript">
+  <meta name="twitter:description" content="Khám phá cơ chế Event Loop trong JavaScript, giúp hiểu rõ cách xử lý bất đồng bộ và ưu tiên thực thi trong ngôn ngữ này.">
+<meta name="application-name" content="My KeepIt site">
+<meta name="apple-mobile-web-app-title" content="My KeepIt site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="//localhost:1313/posts/javascript-loop/" /><link rel="prev" href="//localhost:1313/posts/java-networking/" /><link rel="next" href="//localhost:1313/posts/javascript-async/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Chuyên sâu về Event Loop trong JavaScript",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/\/localhost:1313\/posts\/javascript-loop\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "\/\/localhost:1313\/posts\/javascript-loop\/featured-image.jpg",
+                            "width":  679 ,
+                            "height":  325 
+                        }],"genre": "posts","keywords": "JavaScript, Event Loop, JavaScript Advanced","wordcount":  607 ,
+        "url": "\/\/localhost:1313\/posts\/javascript-loop\/","datePublished": "2024-12-26T18:00:00+08:00","dateModified": "2024-12-26T18:00:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "ChatGPT"
+            },"description": "Khám phá cơ chế Event Loop trong JavaScript, giúp hiểu rõ cách xử lý bất đồng bộ và ưu tiên thực thi trong ngôn ngữ này."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Nguyễn Việt Anh Blog">Trang chủ</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/aboutme/"> About Me </a><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Nguyễn Việt Anh Blog">Trang chủ</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/aboutme/" title="">About Me</a><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Chuyên sâu về Event Loop trong JavaScript</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://chatgpt.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ChatGPT</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/javascript/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>JavaScript</a>&nbsp;<a href="/categories/advanced-concepts/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Advanced Concepts</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-12-26">2024-12-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;607 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/javascript-loop/featured-image.jpg"
+        data-srcset="/posts/javascript-loop/featured-image.jpg, /posts/javascript-loop/featured-image.jpg 1.5x, /posts/javascript-loop/featured-image.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/javascript-loop/featured-image.jpg"
+        title="Khám phá cơ chế Event Loop trong JavaScript, giúp hiểu rõ cách xử lý bất đồng bộ và ưu tiên thực thi trong ngôn ngữ này." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#event-loop-là-gì">Event Loop là gì?</a></li>
+    <li><a href="#các-thành-phần-chính">Các thành phần chính</a></li>
+    <li><a href="#cách-hoạt-động-của-event-loop">Cách hoạt động của Event Loop</a>
+      <ul>
+        <li><a href="#1-đồng-bộ">1. Đồng bộ:</a></li>
+        <li><a href="#2-bất-đồng-bộ">2. Bất đồng bộ:</a></li>
+      </ul>
+    </li>
+    <li><a href="#microtasks-và-macrotasks">Microtasks và Macrotasks</a>
+      <ul>
+        <li><a href="#microtasks">Microtasks:</a></li>
+        <li><a href="#macrotasks">Macrotasks:</a></li>
+        <li><a href="#thứ-tự-thực-thi">Thứ tự thực thi:</a></li>
+      </ul>
+    </li>
+    <li><a href="#ví-dụ-minh-họa-event-loop">Ví dụ minh họa Event Loop</a>
+      <ul>
+        <li><a href="#1-hàng-đợi-callback">1. Hàng đợi callback:</a></li>
+        <li><a href="#2-kết-hợp-microtasks-và-macrotasks">2. Kết hợp Microtasks và Macrotasks:</a></li>
+      </ul>
+    </li>
+    <li><a href="#event-loop-trong-nodejs">Event Loop trong Node.js</a></li>
+    <li><a href="#ứng-dụng-thực-tế">Ứng dụng thực tế</a>
+      <ul>
+        <li><a href="#1-tối-ưu-hóa-hiệu-suất">1. Tối ưu hóa hiệu suất:</a></li>
+        <li><a href="#2-xử-lý-tác-vụ-bất-đồng-bộ-phức-tạp">2. Xử lý tác vụ bất đồng bộ phức tạp:</a></li>
+        <li><a href="#3-debugging">3. Debugging:</a></li>
+      </ul>
+    </li>
+    <li><a href="#kết-luận">Kết luận</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="chuyên-sâu-về-event-loop-trong-javascript">Chuyên sâu về Event Loop trong JavaScript</h1>
+<p>Event Loop là trái tim của JavaScript, giúp quản lý và điều phối các tác vụ bất đồng bộ. Hiểu rõ về Event Loop là chìa khóa để giải thích tại sao một số đoạn mã JavaScript lại hoạt động như vậy.</p>
+<hr>
+<h2 id="event-loop-là-gì">Event Loop là gì?</h2>
+<p>JavaScript là một ngôn ngữ đơn luồng (<strong>single-threaded</strong>), nhưng nó có thể xử lý nhiều tác vụ bất đồng bộ nhờ cơ chế Event Loop. Event Loop chịu trách nhiệm:</p>
+<ul>
+<li>Lắng nghe các sự kiện từ hàng đợi (queue).</li>
+<li>Quản lý luồng chính (call stack).</li>
+<li>Đảm bảo các tác vụ bất đồng bộ thực thi đúng thứ tự.</li>
+</ul>
+<hr>
+<h2 id="các-thành-phần-chính">Các thành phần chính</h2>
+<ol>
+<li><strong>Call Stack</strong>: Là nơi các lệnh JavaScript được thực thi tuần tự.</li>
+<li><strong>Web APIs</strong>: Cung cấp môi trường chạy các tác vụ bất đồng bộ như <code>setTimeout</code>, <code>fetch</code>, hoặc DOM events.</li>
+<li><strong>Callback Queue</strong>: Hàng đợi nơi các callback chờ được thực thi sau khi call stack rỗng.</li>
+<li><strong>Event Loop</strong>: Theo dõi call stack và callback queue để quyết định khi nào đưa một hàm từ queue vào stack.</li>
+</ol>
+<hr>
+<h2 id="cách-hoạt-động-của-event-loop">Cách hoạt động của Event Loop</h2>
+<h3 id="1-đồng-bộ">1. Đồng bộ:</h3>
+<p>Các lệnh được thực thi trực tiếp trong <strong>call stack</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Start&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;End&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Output:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Start
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// End
+</span></span></span></code></pre></div><h3 id="2-bất-đồng-bộ">2. Bất đồng bộ:</h3>
+<p>Các tác vụ như <code>setTimeout</code>, <code>fetch</code> được chuyển sang <strong>Web APIs</strong> để xử lý. Khi hoàn thành, chúng đưa callback vào <strong>callback queue</strong> và đợi call stack rỗng để thực thi.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Start&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setTimeout</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Timeout&#34;</span>);
+</span></span><span style="display:flex;"><span>}, <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;End&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Output:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Start
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// End
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Timeout
+</span></span></span></code></pre></div><hr>
+<h2 id="microtasks-và-macrotasks">Microtasks và Macrotasks</h2>
+<h3 id="microtasks">Microtasks:</h3>
+<ul>
+<li>Bao gồm: <code>Promise.then</code>, <code>MutationObserver</code>.</li>
+<li>Ưu tiên cao hơn macrotasks.</li>
+</ul>
+<h3 id="macrotasks">Macrotasks:</h3>
+<ul>
+<li>Bao gồm: <code>setTimeout</code>, <code>setInterval</code>, <code>setImmediate</code> (Node.js).</li>
+</ul>
+<h3 id="thứ-tự-thực-thi">Thứ tự thực thi:</h3>
+<ol>
+<li>Thực thi call stack.</li>
+<li>Thực thi tất cả microtasks.</li>
+<li>Thực thi một macrotask.</li>
+<li>Quay lại bước 1.</li>
+</ol>
+<p>Ví dụ minh họa:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Start&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setTimeout</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Macrotask&#34;</span>);
+</span></span><span style="display:flex;"><span>}, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Promise.<span style="color:#a6e22e">resolve</span>().<span style="color:#a6e22e">then</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Microtask&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;End&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Output:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Start
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// End
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Microtask
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Macrotask
+</span></span></span></code></pre></div><hr>
+<h2 id="ví-dụ-minh-họa-event-loop">Ví dụ minh họa Event Loop</h2>
+<h3 id="1-hàng-đợi-callback">1. Hàng đợi callback:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Start&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setTimeout</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Timeout 1&#34;</span>);
+</span></span><span style="display:flex;"><span>}, <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setTimeout</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Timeout 2&#34;</span>);
+</span></span><span style="display:flex;"><span>}, <span style="color:#ae81ff">500</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;End&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Output:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Start
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// End
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Timeout 2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Timeout 1
+</span></span></span></code></pre></div><h3 id="2-kết-hợp-microtasks-và-macrotasks">2. Kết hợp Microtasks và Macrotasks:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Start&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setTimeout</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Macrotask 1&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Promise.<span style="color:#a6e22e">resolve</span>().<span style="color:#a6e22e">then</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Microtask 1 inside Macrotask 1&#34;</span>);
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>}, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Promise.<span style="color:#a6e22e">resolve</span>().<span style="color:#a6e22e">then</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Microtask 1&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setTimeout</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Macrotask 2&#34;</span>);
+</span></span><span style="display:flex;"><span>}, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;End&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Output:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Start
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// End
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Microtask 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Macrotask 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Microtask 1 inside Macrotask 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Macrotask 2
+</span></span></span></code></pre></div><hr>
+<h2 id="event-loop-trong-nodejs">Event Loop trong Node.js</h2>
+<p>Trong Node.js, Event Loop được chia thành các giai đoạn:</p>
+<ol>
+<li><strong>Timers</strong>: Xử lý các callback từ <code>setTimeout</code> và <code>setInterval</code>.</li>
+<li><strong>Pending Callbacks</strong>: Xử lý các callback bị trì hoãn.</li>
+<li><strong>Idle, Prepare</strong>: Sử dụng nội bộ.</li>
+<li><strong>Poll</strong>: Nhận các sự kiện mới và thực thi I/O callbacks.</li>
+<li><strong>Check</strong>: Xử lý <code>setImmediate</code> callbacks.</li>
+<li><strong>Close Callbacks</strong>: Đóng các callback như <code>socket.on('close')</code>.</li>
+</ol>
+<hr>
+<h2 id="ứng-dụng-thực-tế">Ứng dụng thực tế</h2>
+<h3 id="1-tối-ưu-hóa-hiệu-suất">1. Tối ưu hóa hiệu suất:</h3>
+<p>Hiểu Event Loop giúp tránh chặn luồng chính, đặc biệt trong các ứng dụng giao diện người dùng hoặc xử lý I/O.</p>
+<h3 id="2-xử-lý-tác-vụ-bất-đồng-bộ-phức-tạp">2. Xử lý tác vụ bất đồng bộ phức tạp:</h3>
+<p>Kết hợp microtasks và macrotasks để đảm bảo thứ tự thực thi đúng như mong đợi.</p>
+<h3 id="3-debugging">3. Debugging:</h3>
+<p>Hiểu cơ chế Event Loop giúp bạn dễ dàng phát hiện và sửa các vấn đề như race conditions hay deadlocks.</p>
+<hr>
+<h2 id="kết-luận">Kết luận</h2>
+<p>Event Loop là một cơ chế quan trọng, giúp JavaScript mạnh mẽ trong việc xử lý bất đồng bộ. Hiểu rõ cách hoạt động của nó giúp bạn viết mã hiệu quả và tránh các lỗi phổ biến.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-12-26</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="//localhost:1313/posts/javascript-loop/" data-title="Chuyên sâu về Event Loop trong JavaScript" data-hashtags="JavaScript,Event Loop,JavaScript Advanced"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="//localhost:1313/posts/javascript-loop/" data-hashtag="JavaScript"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="//localhost:1313/posts/javascript-loop/" data-title="Chuyên sâu về Event Loop trong JavaScript"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="//localhost:1313/posts/javascript-loop/" data-title="Chuyên sâu về Event Loop trong JavaScript"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="//localhost:1313/posts/javascript-loop/" data-title="Chuyên sâu về Event Loop trong JavaScript"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/javascript/">JavaScript</a>,&nbsp;<a href="/tags/event-loop/">Event Loop</a>,&nbsp;<a href="/tags/javascript-advanced/">JavaScript Advanced</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/java-networking/" class="prev" rel="prev" title="Chuyên sâu về Java Networking"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Chuyên sâu về Java Networking</a>
+            <a href="/posts/javascript-async/" class="next" rel="next" title="Chuyên sâu về Lập trình bất đồng bộ trong JavaScript">Chuyên sâu về Lập trình bất đồng bộ trong JavaScript<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.140.1">Hugo</a> | Theme - <a href="https://github.com/Fastbyte01/KeepIt" target="_blank" rel="noopener noreffer" title="KeepIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> KeepIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"lightgallery":true,"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

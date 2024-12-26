@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Asynchronous Programming - Tag - Nguyễn Việt Anh Blog</title>
+        <link>//localhost:1313/tags/asynchronous-programming/</link>
+        <description>Asynchronous Programming - Tag - Nguyễn Việt Anh Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 17:00:00 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/tags/asynchronous-programming/" rel="self" type="application/rss+xml" /><item>
+    <title>Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</title>
+    <link>//localhost:1313/posts/javascript-async/</link>
+    <pubDate>Thu, 26 Dec 2024 17:00:00 &#43;0800</pubDate>
+    <author>ChatGPT</author>
+    <guid>//localhost:1313/posts/javascript-async/</guid>
+    <description><![CDATA[<h1 id="chuyên-sâu-về-lập-trình-bất-đồng-bộ-trong-javascript">Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</h1>
+<p>Lập trình bất đồng bộ là một phần quan trọng của JavaScript, đặc biệt trong việc xử lý các tác vụ như gọi API, đọc/ghi file, hoặc giao tiếp với cơ sở dữ liệu. Hiểu rõ cách thức hoạt động của bất đồng bộ sẽ giúp bạn viết mã hiệu quả và tránh các lỗi khó xử lý.</p>
+<hr>
+<h2 id="lập-trình-bất-đồng-bộ-là-gì">Lập trình bất đồng bộ là gì?</h2>
+<p>Lập trình bất đồng bộ cho phép các tác vụ mất thời gian được thực thi mà không chặn luồng chính (main thread). Điều này giúp giao diện người dùng vẫn mượt mà trong khi các tác vụ nền đang chạy.</p>]]></description>
+</item>
+</channel>
+</rss>

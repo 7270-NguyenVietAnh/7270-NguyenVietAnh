@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Closures - Tag - Nguyễn Việt Anh Blog</title>
+        <link>//localhost:1313/tags/closures/</link>
+        <description>Closures - Tag - Nguyễn Việt Anh Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 15:00:00 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/tags/closures/" rel="self" type="application/rss+xml" /><item>
+    <title>Hiểu sâu về Closures trong JavaScript</title>
+    <link>//localhost:1313/posts/javascript-closures/</link>
+    <pubDate>Thu, 26 Dec 2024 15:00:00 &#43;0800</pubDate>
+    <author>ChatGPT</author>
+    <guid>//localhost:1313/posts/javascript-closures/</guid>
+    <description><![CDATA[<h1 id="hiểu-sâu-về-closures-trong-javascript">Hiểu sâu về Closures trong JavaScript</h1>
+<p><strong>Closures</strong> là một trong những khái niệm mạnh mẽ và thường gây nhầm lẫn trong JavaScript. Chúng ta sẽ tìm hiểu closures là gì, cách chúng hoạt động, và tại sao chúng rất quan trọng trong lập trình JavaScript.</p>
+<hr>
+<h2 id="closures-là-gì">Closures là gì?</h2>
+<p>Closures xảy ra khi một hàm &ldquo;nhớ&rdquo; được phạm vi (scope) nơi nó được tạo ra, ngay cả khi hàm đó được gọi bên ngoài phạm vi đó.</p>]]></description>
+</item>
+</channel>
+</rss>

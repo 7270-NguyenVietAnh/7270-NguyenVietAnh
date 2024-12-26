@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Lập Trình - Category - Nguyễn Việt Anh Blog</title>
+        <link>//localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/</link>
+        <description>Lập Trình - Category - Nguyễn Việt Anh Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 14:00:00 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/" rel="self" type="application/rss+xml" /><item>
+    <title>Lập trình Java Hướng Đối Tượng</title>
+    <link>//localhost:1313/posts/java-oop/</link>
+    <pubDate>Thu, 26 Dec 2024 14:00:00 &#43;0800</pubDate>
+    <author>ChatGPT</author>
+    <guid>//localhost:1313/posts/java-oop/</guid>
+    <description><![CDATA[<h1 id="giới-thiệu-về-lập-trình-hướng-đối-tượng-trong-java">Giới thiệu về Lập Trình Hướng Đối Tượng trong Java</h1>
+<p>Lập trình hướng đối tượng (OOP) là một phương pháp lập trình mạnh mẽ giúp tổ chức và xử lý dữ liệu trong các chương trình phức tạp. Java, với tính năng hỗ trợ đầy đủ OOP, là một trong những ngôn ngữ phổ biến nhất được sử dụng để phát triển ứng dụng lớn và mạnh mẽ.</p>
+<h2 id="các-khái-niệm-chính-trong-lập-trình-hướng-đối-tượng">Các Khái Niệm Chính trong Lập Trình Hướng Đối Tượng</h2>
+<p>Lập trình hướng đối tượng bao gồm bốn nguyên lý cơ bản:</p>]]></description>
+</item>
+</channel>
+</rss>

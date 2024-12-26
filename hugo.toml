@@ -1,0 +1,4 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Nguyễn Việt Anh Blog"
+theme = "KeepIt"

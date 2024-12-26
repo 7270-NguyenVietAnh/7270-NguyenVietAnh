@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Networking - Tag - Nguyễn Việt Anh Blog</title>
+        <link>//localhost:1313/tags/networking/</link>
+        <description>Networking - Tag - Nguyễn Việt Anh Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 19:00:00 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/tags/networking/" rel="self" type="application/rss+xml" /><item>
+    <title>Chuyên sâu về Java Networking</title>
+    <link>//localhost:1313/posts/java-networking/</link>
+    <pubDate>Thu, 26 Dec 2024 19:00:00 &#43;0800</pubDate>
+    <author>ChatGPT</author>
+    <guid>//localhost:1313/posts/java-networking/</guid>
+    <description><![CDATA[<h1 id="chuyên-sâu-về-java-networking">Chuyên sâu về Java Networking</h1>
+<p>Java cung cấp một API mạnh mẽ để lập trình mạng, giúp các ứng dụng Java giao tiếp qua mạng dễ dàng. Từ việc thiết lập kết nối TCP/IP đến việc gửi và nhận dữ liệu, Java Networking hỗ trợ cả client và server.</p>
+<hr>
+<h2 id="java-networking-là-gì">Java Networking là gì?</h2>
+<p>Java Networking bao gồm các lớp và giao thức hỗ trợ lập trình mạng như TCP, UDP, và HTTP. API này nằm trong gói <code>java.net</code>, cung cấp các lớp như <code>Socket</code>, <code>ServerSocket</code>, <code>InetAddress</code>, và nhiều hơn nữa.</p>]]></description>
+</item>
+</channel>
+</rss>
