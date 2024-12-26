@@ -2,14 +2,4 @@ title: "My Hugo Site"
 description: "A simple site built with Hugo"
 baseurl: ""  # Nếu sử dụng subpath, ví dụ: "/myrepo"
 url: "https://7270-NguyenVietAnh.github.io"  # URL của bạn, thay `username` bằng tên tài khoản GitHub
-theme: "themes/KeepIt"  # Chọn theme bạn muốn sử dụng
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-github-metadata
-  - jekyll-readme-index
-  
-paginate: 10  # Số lượng bài viết trên mỗi trang
-github:
-  is_project_page: true  # Nếu đây là một project page, set true
+theme: "themes\KeepIt"  # Chọn theme bạn muốn sử dụng
