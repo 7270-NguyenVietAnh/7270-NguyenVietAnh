@@ -2,4 +2,4 @@ title: "My Hugo Site"
 description: "A simple site built with Hugo"
 baseurl: ""  # Nếu sử dụng subpath, ví dụ: "/myrepo"
 url: "https://7270-NguyenVietAnh.github.io"  # URL của bạn, thay `username` bằng tên tài khoản GitHub
-theme: "themes/KeepIt"  # Chọn theme bạn muốn sử dụng
+theme: "themes/MyKeepIt"  # Chọn theme bạn muốn sử dụng
