@@ -13,7 +13,7 @@ Nếu bạn muốn kết nối hoặc có bất kỳ câu hỏi nào, đừng ng
 ## 🌍 Mạng xã hội
 Bạn có thể tìm thấy tôi ở các nền tảng sau:
 
-- 🌐 [Facebook](https://www.facebook.com/nguyenvietanh)  
+- 🌐 [Facebook](https://www.facebook.com/profile.php?id=100011770384069)  
 - 💻 [GitHub](https://github.com/7270-NguyenVietAnh)  
 
 ---
