@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Garbage Collection - Tag - Nguyễn Việt Anh Blog</title>
-        <link>//localhost:1313/tags/garbage-collection/</link>
+        <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/garbage-collection/</link>
         <description>Garbage Collection - Tag - Nguyễn Việt Anh Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/tags/garbage-collection/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/garbage-collection/" rel="self" type="application/rss+xml" /><item>
     <title>Chuyên sâu về Java Memory Management</title>
-    <link>//localhost:1313/posts/java-memory-management/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/</link>
     <pubDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/java-memory-management/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/</guid>
     <description><![CDATA[<h1 id="chuyên-sâu-về-java-memory-management">Chuyên sâu về Java Memory Management</h1>
 <p>Java Memory Management (quản lý bộ nhớ) là một phần quan trọng trong việc phát triển ứng dụng Java hiệu quả. Nó bao gồm cách bộ nhớ được phân bổ, sử dụng, và giải phóng tự động thông qua <strong>Garbage Collection</strong>.</p>
 <hr>

@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Advanced Concepts - Category - Nguyễn Việt Anh Blog</title>
-        <link>//localhost:1313/categories/advanced-concepts/</link>
+        <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/</link>
         <description>Advanced Concepts - Category - Nguyễn Việt Anh Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 19:00:00 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/categories/advanced-concepts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/" rel="self" type="application/rss+xml" /><item>
     <title>Hiểu sâu về Closures trong JavaScript</title>
-    <link>//localhost:1313/posts/javascript-closures/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/</link>
     <pubDate>Thu, 26 Dec 2024 15:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/javascript-closures/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/</guid>
     <description><![CDATA[<h1 id="hiểu-sâu-về-closures-trong-javascript">Hiểu sâu về Closures trong JavaScript</h1>
 <p><strong>Closures</strong> là một trong những khái niệm mạnh mẽ và thường gây nhầm lẫn trong JavaScript. Chúng ta sẽ tìm hiểu closures là gì, cách chúng hoạt động, và tại sao chúng rất quan trọng trong lập trình JavaScript.</p>
 <hr>
@@ -17,10 +17,10 @@
 </item>
 <item>
     <title>Hiểu sâu về Java Stream API</title>
-    <link>//localhost:1313/posts/java-stream-api/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/</link>
     <pubDate>Thu, 26 Dec 2024 16:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/java-stream-api/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/</guid>
     <description><![CDATA[<h1 id="hiểu-sâu-về-java-stream-api">Hiểu sâu về Java Stream API</h1>
 <p><strong>Java Stream API</strong> là một tính năng mạnh mẽ được giới thiệu từ Java 8, giúp xử lý các bộ sưu tập dữ liệu (collections) dễ dàng, hiệu quả và ngắn gọn hơn. Stream API giúp lập trình viên tập trung vào <strong>cái cần làm</strong> (what to do) thay vì <strong>cách làm</strong> (how to do).</p>
 <hr>
@@ -31,10 +31,10 @@
 </item>
 <item>
     <title>Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</title>
-    <link>//localhost:1313/posts/javascript-async/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-async/</link>
     <pubDate>Thu, 26 Dec 2024 17:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/javascript-async/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-async/</guid>
     <description><![CDATA[<h1 id="chuyên-sâu-về-lập-trình-bất-đồng-bộ-trong-javascript">Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</h1>
 <p>Lập trình bất đồng bộ là một phần quan trọng của JavaScript, đặc biệt trong việc xử lý các tác vụ như gọi API, đọc/ghi file, hoặc giao tiếp với cơ sở dữ liệu. Hiểu rõ cách thức hoạt động của bất đồng bộ sẽ giúp bạn viết mã hiệu quả và tránh các lỗi khó xử lý.</p>
 <hr>
@@ -43,10 +43,10 @@
 </item>
 <item>
     <title>Chuyên sâu về Event Loop trong JavaScript</title>
-    <link>//localhost:1313/posts/javascript-loop/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/</link>
     <pubDate>Thu, 26 Dec 2024 18:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/javascript-loop/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/</guid>
     <description><![CDATA[<h1 id="chuyên-sâu-về-event-loop-trong-javascript">Chuyên sâu về Event Loop trong JavaScript</h1>
 <p>Event Loop là trái tim của JavaScript, giúp quản lý và điều phối các tác vụ bất đồng bộ. Hiểu rõ về Event Loop là chìa khóa để giải thích tại sao một số đoạn mã JavaScript lại hoạt động như vậy.</p>
 <hr>
@@ -55,15 +55,55 @@
 </item>
 <item>
     <title>Chuyên sâu về Java Networking</title>
-    <link>//localhost:1313/posts/java-networking/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/</link>
     <pubDate>Thu, 26 Dec 2024 19:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/java-networking/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/</guid>
     <description><![CDATA[<h1 id="chuyên-sâu-về-java-networking">Chuyên sâu về Java Networking</h1>
 <p>Java cung cấp một API mạnh mẽ để lập trình mạng, giúp các ứng dụng Java giao tiếp qua mạng dễ dàng. Từ việc thiết lập kết nối TCP/IP đến việc gửi và nhận dữ liệu, Java Networking hỗ trợ cả client và server.</p>
 <hr>
 <h2 id="java-networking-là-gì">Java Networking là gì?</h2>
 <p>Java Networking bao gồm các lớp và giao thức hỗ trợ lập trình mạng như TCP, UDP, và HTTP. API này nằm trong gói <code>java.net</code>, cung cấp các lớp như <code>Socket</code>, <code>ServerSocket</code>, <code>InetAddress</code>, và nhiều hơn nữa.</p>]]></description>
+</item>
+<item>
+    <title>Chuyên sâu về Java Memory Management</title>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/</link>
+    <pubDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</pubDate>
+    <author>ChatGPT</author>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/</guid>
+    <description><![CDATA[<h1 id="chuyên-sâu-về-java-memory-management">Chuyên sâu về Java Memory Management</h1>
+<p>Java Memory Management (quản lý bộ nhớ) là một phần quan trọng trong việc phát triển ứng dụng Java hiệu quả. Nó bao gồm cách bộ nhớ được phân bổ, sử dụng, và giải phóng tự động thông qua <strong>Garbage Collection</strong>.</p>
+<hr>
+<h2 id="các-vùng-bộ-nhớ-trong-java">Các vùng bộ nhớ trong Java</h2>
+<p>Java Virtual Machine (JVM) quản lý bộ nhớ theo các vùng chính:</p>
+<h3 id="1-heap">1. <strong>Heap</strong></h3>
+<ul>
+<li><strong>Mô tả</strong>: Dùng để lưu trữ các đối tượng và biến toàn cục.</li>
+<li><strong>Quản lý</strong>: Heap được chia thành hai vùng chính:
+<ul>
+<li><strong>Young Generation</strong>: Chứa các đối tượng mới tạo. Bao gồm:
+<ul>
+<li><strong>Eden Space</strong>: Nơi khởi tạo đối tượng mới.</li>
+<li><strong>Survivor Spaces</strong>: Lưu trữ các đối tượng sống sót sau mỗi chu kỳ GC.</li>
+</ul>
+</li>
+<li><strong>Old Generation</strong>: Chứa các đối tượng tồn tại lâu dài.</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-stack">2. <strong>Stack</strong></h3>
+<ul>
+<li><strong>Mô tả</strong>: Lưu trữ các biến cục bộ và khung ngăn xếp (stack frames) của từng luồng.</li>
+<li><strong>Đặc điểm</strong>: Dữ liệu trong Stack có vòng đời ngắn và được quản lý tự động theo LIFO (Last In, First Out).</li>
+</ul>
+<h3 id="3-metaspace">3. <strong>Metaspace</strong></h3>
+<ul>
+<li><strong>Mô tả</strong>: Lưu trữ thông tin về các lớp (class metadata).</li>
+<li><strong>Điểm khác biệt</strong>: Thay thế PermGen từ Java 8, với khả năng mở rộng động.</li>
+</ul>
+<hr>
+<h2 id="garbage-collection-gc">Garbage Collection (GC)</h2>
+<p>Garbage Collection tự động giải phóng bộ nhớ không còn được tham chiếu, giúp giảm nguy cơ rò rỉ bộ nhớ (memory leaks).</p>]]></description>
 </item>
 </channel>
 </rss>

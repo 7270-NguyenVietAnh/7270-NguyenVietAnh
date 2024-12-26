@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>JavaScript - Category - Nguyễn Việt Anh Blog</title>
-        <link>//localhost:1313/categories/javascript/</link>
+        <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/javascript/</link>
         <description>JavaScript - Category - Nguyễn Việt Anh Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 18:00:00 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/categories/javascript/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 18:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/javascript/" rel="self" type="application/rss+xml" /><item>
     <title>JavaScript Cơ Bản</title>
-    <link>//localhost:1313/posts/javascript-basic/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-basic/</link>
     <pubDate>Thu, 26 Dec 2024 13:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/javascript-basic/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-basic/</guid>
     <description><![CDATA[<h1 id="giới-thiệu-về-javascript">Giới thiệu về JavaScript</h1>
 <p>JavaScript là một ngôn ngữ lập trình kịch bản phổ biến, chủ yếu được sử dụng để tạo các trang web động và tương tác. JavaScript được phát triển lần đầu tiên bởi Netscape vào năm 1995 và hiện nay là một trong những ngôn ngữ quan trọng nhất trong phát triển web.</p>
 <h2 id="đặc-điểm-của-javascript">Đặc điểm của JavaScript</h2>
@@ -23,10 +23,10 @@
 </item>
 <item>
     <title>Hiểu sâu về Closures trong JavaScript</title>
-    <link>//localhost:1313/posts/javascript-closures/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/</link>
     <pubDate>Thu, 26 Dec 2024 15:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/javascript-closures/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/</guid>
     <description><![CDATA[<h1 id="hiểu-sâu-về-closures-trong-javascript">Hiểu sâu về Closures trong JavaScript</h1>
 <p><strong>Closures</strong> là một trong những khái niệm mạnh mẽ và thường gây nhầm lẫn trong JavaScript. Chúng ta sẽ tìm hiểu closures là gì, cách chúng hoạt động, và tại sao chúng rất quan trọng trong lập trình JavaScript.</p>
 <hr>
@@ -35,10 +35,10 @@
 </item>
 <item>
     <title>Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</title>
-    <link>//localhost:1313/posts/javascript-async/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-async/</link>
     <pubDate>Thu, 26 Dec 2024 17:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/javascript-async/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-async/</guid>
     <description><![CDATA[<h1 id="chuyên-sâu-về-lập-trình-bất-đồng-bộ-trong-javascript">Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</h1>
 <p>Lập trình bất đồng bộ là một phần quan trọng của JavaScript, đặc biệt trong việc xử lý các tác vụ như gọi API, đọc/ghi file, hoặc giao tiếp với cơ sở dữ liệu. Hiểu rõ cách thức hoạt động của bất đồng bộ sẽ giúp bạn viết mã hiệu quả và tránh các lỗi khó xử lý.</p>
 <hr>
@@ -47,10 +47,10 @@
 </item>
 <item>
     <title>Chuyên sâu về Event Loop trong JavaScript</title>
-    <link>//localhost:1313/posts/javascript-loop/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/</link>
     <pubDate>Thu, 26 Dec 2024 18:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/javascript-loop/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/</guid>
     <description><![CDATA[<h1 id="chuyên-sâu-về-event-loop-trong-javascript">Chuyên sâu về Event Loop trong JavaScript</h1>
 <p>Event Loop là trái tim của JavaScript, giúp quản lý và điều phối các tác vụ bất đồng bộ. Hiểu rõ về Event Loop là chìa khóa để giải thích tại sao một số đoạn mã JavaScript lại hoạt động như vậy.</p>
 <hr>

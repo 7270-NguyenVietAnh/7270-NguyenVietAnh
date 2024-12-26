@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Java - Category - Nguyễn Việt Anh Blog</title>
-        <link>//localhost:1313/categories/java/</link>
+        <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/java/</link>
         <description>Java - Category - Nguyễn Việt Anh Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/categories/java/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/java/" rel="self" type="application/rss+xml" /><item>
     <title>Java Cơ Bản</title>
-    <link>//localhost:1313/posts/java-basic/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-basic/</link>
     <pubDate>Thu, 26 Dec 2024 12:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/java-basic/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-basic/</guid>
     <description><![CDATA[<h1 id="giới-thiệu-về-java">Giới thiệu về Java</h1>
 <p>Java là một ngôn ngữ lập trình hướng đối tượng, được phát triển bởi Sun Microsystems vào năm 1995. Java là một trong những ngôn ngữ phổ biến nhất trên thế giới nhờ tính đơn giản, tính di động, và khả năng mở rộng.</p>
 <h2 id="đặc-điểm-của-java">Đặc điểm của Java</h2>
@@ -24,10 +24,10 @@
 </item>
 <item>
     <title>Lập trình Java Hướng Đối Tượng</title>
-    <link>//localhost:1313/posts/java-oop/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-oop/</link>
     <pubDate>Thu, 26 Dec 2024 14:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/java-oop/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-oop/</guid>
     <description><![CDATA[<h1 id="giới-thiệu-về-lập-trình-hướng-đối-tượng-trong-java">Giới thiệu về Lập Trình Hướng Đối Tượng trong Java</h1>
 <p>Lập trình hướng đối tượng (OOP) là một phương pháp lập trình mạnh mẽ giúp tổ chức và xử lý dữ liệu trong các chương trình phức tạp. Java, với tính năng hỗ trợ đầy đủ OOP, là một trong những ngôn ngữ phổ biến nhất được sử dụng để phát triển ứng dụng lớn và mạnh mẽ.</p>
 <h2 id="các-khái-niệm-chính-trong-lập-trình-hướng-đối-tượng">Các Khái Niệm Chính trong Lập Trình Hướng Đối Tượng</h2>
@@ -35,10 +35,10 @@
 </item>
 <item>
     <title>Hiểu sâu về Java Stream API</title>
-    <link>//localhost:1313/posts/java-stream-api/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/</link>
     <pubDate>Thu, 26 Dec 2024 16:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/java-stream-api/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/</guid>
     <description><![CDATA[<h1 id="hiểu-sâu-về-java-stream-api">Hiểu sâu về Java Stream API</h1>
 <p><strong>Java Stream API</strong> là một tính năng mạnh mẽ được giới thiệu từ Java 8, giúp xử lý các bộ sưu tập dữ liệu (collections) dễ dàng, hiệu quả và ngắn gọn hơn. Stream API giúp lập trình viên tập trung vào <strong>cái cần làm</strong> (what to do) thay vì <strong>cách làm</strong> (how to do).</p>
 <hr>
@@ -49,10 +49,10 @@
 </item>
 <item>
     <title>Chuyên sâu về Java Networking</title>
-    <link>//localhost:1313/posts/java-networking/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/</link>
     <pubDate>Thu, 26 Dec 2024 19:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/java-networking/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/</guid>
     <description><![CDATA[<h1 id="chuyên-sâu-về-java-networking">Chuyên sâu về Java Networking</h1>
 <p>Java cung cấp một API mạnh mẽ để lập trình mạng, giúp các ứng dụng Java giao tiếp qua mạng dễ dàng. Từ việc thiết lập kết nối TCP/IP đến việc gửi và nhận dữ liệu, Java Networking hỗ trợ cả client và server.</p>
 <hr>
@@ -61,10 +61,10 @@
 </item>
 <item>
     <title>Chuyên sâu về Java Memory Management</title>
-    <link>//localhost:1313/posts/java-memory-management/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/</link>
     <pubDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/java-memory-management/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/</guid>
     <description><![CDATA[<h1 id="chuyên-sâu-về-java-memory-management">Chuyên sâu về Java Memory Management</h1>
 <p>Java Memory Management (quản lý bộ nhớ) là một phần quan trọng trong việc phát triển ứng dụng Java hiệu quả. Nó bao gồm cách bộ nhớ được phân bổ, sử dụng, và giải phóng tự động thông qua <strong>Garbage Collection</strong>.</p>
 <hr>

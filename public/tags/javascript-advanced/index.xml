@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>JavaScript Advanced - Tag - Nguyễn Việt Anh Blog</title>
-        <link>//localhost:1313/tags/javascript-advanced/</link>
+        <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/javascript-advanced/</link>
         <description>JavaScript Advanced - Tag - Nguyễn Việt Anh Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 18:00:00 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/tags/javascript-advanced/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 18:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/javascript-advanced/" rel="self" type="application/rss+xml" /><item>
     <title>Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</title>
-    <link>//localhost:1313/posts/javascript-async/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-async/</link>
     <pubDate>Thu, 26 Dec 2024 17:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/javascript-async/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-async/</guid>
     <description><![CDATA[<h1 id="chuyên-sâu-về-lập-trình-bất-đồng-bộ-trong-javascript">Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</h1>
 <p>Lập trình bất đồng bộ là một phần quan trọng của JavaScript, đặc biệt trong việc xử lý các tác vụ như gọi API, đọc/ghi file, hoặc giao tiếp với cơ sở dữ liệu. Hiểu rõ cách thức hoạt động của bất đồng bộ sẽ giúp bạn viết mã hiệu quả và tránh các lỗi khó xử lý.</p>
 <hr>
@@ -17,10 +17,10 @@
 </item>
 <item>
     <title>Chuyên sâu về Event Loop trong JavaScript</title>
-    <link>//localhost:1313/posts/javascript-loop/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/</link>
     <pubDate>Thu, 26 Dec 2024 18:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
-    <guid>//localhost:1313/posts/javascript-loop/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/</guid>
     <description><![CDATA[<h1 id="chuyên-sâu-về-event-loop-trong-javascript">Chuyên sâu về Event Loop trong JavaScript</h1>
 <p>Event Loop là trái tim của JavaScript, giúp quản lý và điều phối các tác vụ bất đồng bộ. Hiểu rõ về Event Loop là chìa khóa để giải thích tại sao một số đoạn mã JavaScript lại hoạt động như vậy.</p>
 <hr>

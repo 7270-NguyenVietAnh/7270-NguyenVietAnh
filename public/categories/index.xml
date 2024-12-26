@@ -1,46 +1,38 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Categories - Category - Nguyễn Việt Anh Blog</title>
-        <link>//localhost:1313/categories/</link>
+        <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/</link>
         <description>Categories - Category - Nguyễn Việt Anh Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/" rel="self" type="application/rss+xml" /><item>
     <title>Advanced Concepts</title>
-    <link>//localhost:1313/categories/advanced-concepts/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/</link>
     <pubDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>//localhost:1313/categories/advanced-concepts/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Java</title>
-    <link>//localhost:1313/categories/java/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/java/</link>
     <pubDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>//localhost:1313/categories/java/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/java/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>JavaScript</title>
-    <link>//localhost:1313/categories/javascript/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/javascript/</link>
     <pubDate>Thu, 26 Dec 2024 18:00:00 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>//localhost:1313/categories/javascript/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Lập Trình</title>
-    <link>//localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/</link>
-    <pubDate>Thu, 26 Dec 2024 14:00:00 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>//localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/javascript/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Documentation</title>
-    <link>//localhost:1313/categories/documentation/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/documentation/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>//localhost:1313/categories/documentation/</guid>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/documentation/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
