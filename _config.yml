@@ -4,7 +4,7 @@ description: "My personal profile on GitHub Pages"
 baseurl: ""
 url: "https://7270-NguyenVietAnh.github.io"
 
-remote_theme: FlyFishy/MyKeepIt
+remote_theme: Fastbyte01/KeepIt
 
 plugins:
   - jekyll-remote-theme
