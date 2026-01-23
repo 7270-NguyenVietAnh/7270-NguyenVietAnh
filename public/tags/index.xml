@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Nguyễn Việt Anh Blog</title>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/</link>
+    <description>Recent content in Tags on Nguyễn Việt Anh Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Dec 2024 20:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Garbage Collection</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/garbage-collection/</link>
+      <pubDate>Thu, 26 Dec 2024 20:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/garbage-collection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/java/</link>
+      <pubDate>Thu, 26 Dec 2024 20:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memory Management</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/memory-management/</link>
+      <pubDate>Thu, 26 Dec 2024 20:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/memory-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/networking/</link>
+      <pubDate>Thu, 26 Dec 2024 19:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sockets</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/sockets/</link>
+      <pubDate>Thu, 26 Dec 2024 19:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/sockets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event Loop</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/event-loop/</link>
+      <pubDate>Thu, 26 Dec 2024 18:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/event-loop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JavaScript</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/javascript/</link>
+      <pubDate>Thu, 26 Dec 2024 18:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JavaScript Advanced</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/javascript-advanced/</link>
+      <pubDate>Thu, 26 Dec 2024 18:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/javascript-advanced/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Asynchronous Programming</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/asynchronous-programming/</link>
+      <pubDate>Thu, 26 Dec 2024 17:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/asynchronous-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java 8</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/java-8/</link>
+      <pubDate>Thu, 26 Dec 2024 16:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/java-8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stream API</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/stream-api/</link>
+      <pubDate>Thu, 26 Dec 2024 16:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/stream-api/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Advanced JavaScript</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/advanced-javascript/</link>
+      <pubDate>Thu, 26 Dec 2024 15:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/advanced-javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Closures</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/closures/</link>
+      <pubDate>Thu, 26 Dec 2024 15:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/closures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lập Trình Hướng Đối Tượng</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/l%E1%BA%ADp-tr%C3%ACnh-h%C6%B0%E1%BB%9Bng-%C4%91%E1%BB%91i-t%C6%B0%E1%BB%A3ng/</link>
+      <pubDate>Thu, 26 Dec 2024 14:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/l%E1%BA%ADp-tr%C3%ACnh-h%C6%B0%E1%BB%9Bng-%C4%91%E1%BB%91i-t%C6%B0%E1%BB%A3ng/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

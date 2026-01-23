@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networking on Nguyễn Việt Anh Blog</title>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/networking/</link>
+    <description>Recent content in Networking on Nguyễn Việt Anh Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Dec 2024 19:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chuyên sâu về Java Networking</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/</link>
+      <pubDate>Thu, 26 Dec 2024 19:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/</guid>
+      <description>&lt;h1 id=&#34;chuyên-sâu-về-java-networking&#34;&gt;Chuyên sâu về Java Networking&lt;/h1&gt;&#xA;&lt;p&gt;Java cung cấp một API mạnh mẽ để lập trình mạng, giúp các ứng dụng Java giao tiếp qua mạng dễ dàng. Từ việc thiết lập kết nối TCP/IP đến việc gửi và nhận dữ liệu, Java Networking hỗ trợ cả client và server.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;java-networking-là-gì&#34;&gt;Java Networking là gì?&lt;/h2&gt;&#xA;&lt;p&gt;Java Networking bao gồm các lớp và giao thức hỗ trợ lập trình mạng như TCP, UDP, và HTTP. API này nằm trong gói &lt;code&gt;java.net&lt;/code&gt;, cung cấp các lớp như &lt;code&gt;Socket&lt;/code&gt;, &lt;code&gt;ServerSocket&lt;/code&gt;, &lt;code&gt;InetAddress&lt;/code&gt;, và nhiều hơn nữa.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

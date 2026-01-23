@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stream API on Nguyễn Việt Anh Blog</title>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/stream-api/</link>
+    <description>Recent content in Stream API on Nguyễn Việt Anh Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Dec 2024 16:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/stream-api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hiểu sâu về Java Stream API</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/</link>
+      <pubDate>Thu, 26 Dec 2024 16:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/</guid>
+      <description>&lt;h1 id=&#34;hiểu-sâu-về-java-stream-api&#34;&gt;Hiểu sâu về Java Stream API&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Java Stream API&lt;/strong&gt; là một tính năng mạnh mẽ được giới thiệu từ Java 8, giúp xử lý các bộ sưu tập dữ liệu (collections) dễ dàng, hiệu quả và ngắn gọn hơn. Stream API giúp lập trình viên tập trung vào &lt;strong&gt;cái cần làm&lt;/strong&gt; (what to do) thay vì &lt;strong&gt;cách làm&lt;/strong&gt; (how to do).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;stream-api-là-gì&#34;&gt;Stream API là gì?&lt;/h2&gt;&#xA;&lt;h3 id=&#34;định-nghĩa&#34;&gt;Định nghĩa:&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stream API&lt;/strong&gt; là một công cụ hỗ trợ xử lý dữ liệu theo cách khai báo (declarative) bằng cách cung cấp các thao tác như lọc, sắp xếp và chuyển đổi trên các bộ dữ liệu.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
