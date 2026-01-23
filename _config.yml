@@ -1,5 +1,10 @@
-title: "My Hugo Site"
-description: "A simple site built with Hugo"
-baseurl: ""  # Nếu sử dụng subpath, ví dụ: "/myrepo"
-url: "https://7270-NguyenVietAnh.github.io"  # URL của bạn, thay `username` bằng tên tài khoản GitHub
-theme: "themes/MyKeepIt"  # Chọn theme bạn muốn sử dụng
+title: "My Personal Site"
+description: "My personal profile on GitHub Pages"
+
+baseurl: ""
+url: "https://7270-NguyenVietAnh.github.io"
+
+remote_theme: FlyFishy/MyKeepIt
+
+plugins:
+  - jekyll-remote-theme
