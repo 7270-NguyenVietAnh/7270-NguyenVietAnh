@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Nguyễn Việt Anh Blog</title>
-    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/java/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/categories/java/</link>
     <description>Recent content in Java on Nguyễn Việt Anh Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Dec 2024 20:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/categories/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java Cơ Bản</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-basic/</link>
+      <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-basic/</link>
       <pubDate>Thu, 26 Dec 2024 12:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-basic/</guid>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-basic/</guid>
       <description>&lt;h1 id=&#34;giới-thiệu-về-java&#34;&gt;Giới thiệu về Java&lt;/h1&gt;&#xA;&lt;p&gt;Java là một ngôn ngữ lập trình hướng đối tượng, được phát triển bởi Sun Microsystems vào năm 1995. Java là một trong những ngôn ngữ phổ biến nhất trên thế giới nhờ tính đơn giản, tính di động, và khả năng mở rộng.&lt;/p&gt;&#xA;&lt;h2 id=&#34;đặc-điểm-của-java&#34;&gt;Đặc điểm của Java&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hướng đối tượng&lt;/strong&gt;: Java hỗ trợ đầy đủ các khái niệm hướng đối tượng như kế thừa, đóng gói, đa hình và trừu tượng.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Độc lập nền tảng&lt;/strong&gt;: Java sử dụng Java Virtual Machine (JVM) để chạy mã, do đó bạn chỉ cần viết mã một lần và có thể chạy trên nhiều nền tảng khác nhau.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bảo mật&lt;/strong&gt;: Java được thiết kế với các cơ chế bảo mật tích hợp, giúp bảo vệ ứng dụng khỏi các cuộc tấn công.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hiệu năng cao&lt;/strong&gt;: Mặc dù Java không nhanh như C++, JVM và các tối ưu hóa của Java đã giúp cải thiện hiệu suất đáng kể.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Thư viện phong phú&lt;/strong&gt;: Java cung cấp rất nhiều thư viện và API hỗ trợ cho việc phát triển ứng dụng từ đơn giản đến phức tạp.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;cấu-trúc-cơ-bản-của-một-chương-trình-java&#34;&gt;Cấu trúc cơ bản của một chương trình Java&lt;/h2&gt;&#xA;&lt;p&gt;Dưới đây là ví dụ về một chương trình Java đơn giản:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lập trình Java Hướng Đối Tượng</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-oop/</link>
+      <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-oop/</link>
       <pubDate>Thu, 26 Dec 2024 14:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-oop/</guid>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-oop/</guid>
       <description>&lt;h1 id=&#34;giới-thiệu-về-lập-trình-hướng-đối-tượng-trong-java&#34;&gt;Giới thiệu về Lập Trình Hướng Đối Tượng trong Java&lt;/h1&gt;&#xA;&lt;p&gt;Lập trình hướng đối tượng (OOP) là một phương pháp lập trình mạnh mẽ giúp tổ chức và xử lý dữ liệu trong các chương trình phức tạp. Java, với tính năng hỗ trợ đầy đủ OOP, là một trong những ngôn ngữ phổ biến nhất được sử dụng để phát triển ứng dụng lớn và mạnh mẽ.&lt;/p&gt;&#xA;&lt;h2 id=&#34;các-khái-niệm-chính-trong-lập-trình-hướng-đối-tượng&#34;&gt;Các Khái Niệm Chính trong Lập Trình Hướng Đối Tượng&lt;/h2&gt;&#xA;&lt;p&gt;Lập trình hướng đối tượng bao gồm bốn nguyên lý cơ bản:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hiểu sâu về Java Stream API</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/</link>
+      <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-stream-api/</link>
       <pubDate>Thu, 26 Dec 2024 16:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/</guid>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-stream-api/</guid>
       <description>&lt;h1 id=&#34;hiểu-sâu-về-java-stream-api&#34;&gt;Hiểu sâu về Java Stream API&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Java Stream API&lt;/strong&gt; là một tính năng mạnh mẽ được giới thiệu từ Java 8, giúp xử lý các bộ sưu tập dữ liệu (collections) dễ dàng, hiệu quả và ngắn gọn hơn. Stream API giúp lập trình viên tập trung vào &lt;strong&gt;cái cần làm&lt;/strong&gt; (what to do) thay vì &lt;strong&gt;cách làm&lt;/strong&gt; (how to do).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;stream-api-là-gì&#34;&gt;Stream API là gì?&lt;/h2&gt;&#xA;&lt;h3 id=&#34;định-nghĩa&#34;&gt;Định nghĩa:&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stream API&lt;/strong&gt; là một công cụ hỗ trợ xử lý dữ liệu theo cách khai báo (declarative) bằng cách cung cấp các thao tác như lọc, sắp xếp và chuyển đổi trên các bộ dữ liệu.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chuyên sâu về Java Networking</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/</link>
+      <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-networking/</link>
       <pubDate>Thu, 26 Dec 2024 19:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/</guid>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-networking/</guid>
       <description>&lt;h1 id=&#34;chuyên-sâu-về-java-networking&#34;&gt;Chuyên sâu về Java Networking&lt;/h1&gt;&#xA;&lt;p&gt;Java cung cấp một API mạnh mẽ để lập trình mạng, giúp các ứng dụng Java giao tiếp qua mạng dễ dàng. Từ việc thiết lập kết nối TCP/IP đến việc gửi và nhận dữ liệu, Java Networking hỗ trợ cả client và server.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;java-networking-là-gì&#34;&gt;Java Networking là gì?&lt;/h2&gt;&#xA;&lt;p&gt;Java Networking bao gồm các lớp và giao thức hỗ trợ lập trình mạng như TCP, UDP, và HTTP. API này nằm trong gói &lt;code&gt;java.net&lt;/code&gt;, cung cấp các lớp như &lt;code&gt;Socket&lt;/code&gt;, &lt;code&gt;ServerSocket&lt;/code&gt;, &lt;code&gt;InetAddress&lt;/code&gt;, và nhiều hơn nữa.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chuyên sâu về Java Memory Management</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/</link>
+      <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-memory-management/</link>
       <pubDate>Thu, 26 Dec 2024 20:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/</guid>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-memory-management/</guid>
       <description>&lt;h1 id=&#34;chuyên-sâu-về-java-memory-management&#34;&gt;Chuyên sâu về Java Memory Management&lt;/h1&gt;&#xA;&lt;p&gt;Java Memory Management (quản lý bộ nhớ) là một phần quan trọng trong việc phát triển ứng dụng Java hiệu quả. Nó bao gồm cách bộ nhớ được phân bổ, sử dụng, và giải phóng tự động thông qua &lt;strong&gt;Garbage Collection&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;các-vùng-bộ-nhớ-trong-java&#34;&gt;Các vùng bộ nhớ trong Java&lt;/h2&gt;&#xA;&lt;p&gt;Java Virtual Machine (JVM) quản lý bộ nhớ theo các vùng chính:&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-heap&#34;&gt;1. &lt;strong&gt;Heap&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mô tả&lt;/strong&gt;: Dùng để lưu trữ các đối tượng và biến toàn cục.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Quản lý&lt;/strong&gt;: Heap được chia thành hai vùng chính:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Young Generation&lt;/strong&gt;: Chứa các đối tượng mới tạo. Bao gồm:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Eden Space&lt;/strong&gt;: Nơi khởi tạo đối tượng mới.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Survivor Spaces&lt;/strong&gt;: Lưu trữ các đối tượng sống sót sau mỗi chu kỳ GC.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Old Generation&lt;/strong&gt;: Chứa các đối tượng tồn tại lâu dài.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2-stack&#34;&gt;2. &lt;strong&gt;Stack&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mô tả&lt;/strong&gt;: Lưu trữ các biến cục bộ và khung ngăn xếp (stack frames) của từng luồng.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Đặc điểm&lt;/strong&gt;: Dữ liệu trong Stack có vòng đời ngắn và được quản lý tự động theo LIFO (Last In, First Out).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;3-metaspace&#34;&gt;3. &lt;strong&gt;Metaspace&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mô tả&lt;/strong&gt;: Lưu trữ thông tin về các lớp (class metadata).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Điểm khác biệt&lt;/strong&gt;: Thay thế PermGen từ Java 8, với khả năng mở rộng động.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;garbage-collection-gc&#34;&gt;Garbage Collection (GC)&lt;/h2&gt;&#xA;&lt;p&gt;Garbage Collection tự động giải phóng bộ nhớ không còn được tham chiếu, giúp giảm nguy cơ rò rỉ bộ nhớ (memory leaks).&lt;/p&gt;</description>
     </item>
   </channel>

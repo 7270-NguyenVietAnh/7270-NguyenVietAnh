@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Advanced Concepts on Nguyễn Việt Anh Blog</title>
-    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/categories/advanced-concepts/</link>
     <description>Recent content in Advanced Concepts on Nguyễn Việt Anh Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Dec 2024 20:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/categories/advanced-concepts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hiểu sâu về Closures trong JavaScript</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/</link>
+      <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/javascript-closures/</link>
       <pubDate>Thu, 26 Dec 2024 15:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/</guid>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/javascript-closures/</guid>
       <description>&lt;h1 id=&#34;hiểu-sâu-về-closures-trong-javascript&#34;&gt;Hiểu sâu về Closures trong JavaScript&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Closures&lt;/strong&gt; là một trong những khái niệm mạnh mẽ và thường gây nhầm lẫn trong JavaScript. Chúng ta sẽ tìm hiểu closures là gì, cách chúng hoạt động, và tại sao chúng rất quan trọng trong lập trình JavaScript.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;closures-là-gì&#34;&gt;Closures là gì?&lt;/h2&gt;&#xA;&lt;p&gt;Closures xảy ra khi một hàm &amp;ldquo;nhớ&amp;rdquo; được phạm vi (scope) nơi nó được tạo ra, ngay cả khi hàm đó được gọi bên ngoài phạm vi đó.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hiểu sâu về Java Stream API</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/</link>
+      <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-stream-api/</link>
       <pubDate>Thu, 26 Dec 2024 16:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/</guid>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-stream-api/</guid>
       <description>&lt;h1 id=&#34;hiểu-sâu-về-java-stream-api&#34;&gt;Hiểu sâu về Java Stream API&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Java Stream API&lt;/strong&gt; là một tính năng mạnh mẽ được giới thiệu từ Java 8, giúp xử lý các bộ sưu tập dữ liệu (collections) dễ dàng, hiệu quả và ngắn gọn hơn. Stream API giúp lập trình viên tập trung vào &lt;strong&gt;cái cần làm&lt;/strong&gt; (what to do) thay vì &lt;strong&gt;cách làm&lt;/strong&gt; (how to do).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;stream-api-là-gì&#34;&gt;Stream API là gì?&lt;/h2&gt;&#xA;&lt;h3 id=&#34;định-nghĩa&#34;&gt;Định nghĩa:&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stream API&lt;/strong&gt; là một công cụ hỗ trợ xử lý dữ liệu theo cách khai báo (declarative) bằng cách cung cấp các thao tác như lọc, sắp xếp và chuyển đổi trên các bộ dữ liệu.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-async/</link>
+      <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/javascript-async/</link>
       <pubDate>Thu, 26 Dec 2024 17:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-async/</guid>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/javascript-async/</guid>
       <description>&lt;h1 id=&#34;chuyên-sâu-về-lập-trình-bất-đồng-bộ-trong-javascript&#34;&gt;Chuyên sâu về Lập trình bất đồng bộ trong JavaScript&lt;/h1&gt;&#xA;&lt;p&gt;Lập trình bất đồng bộ là một phần quan trọng của JavaScript, đặc biệt trong việc xử lý các tác vụ như gọi API, đọc/ghi file, hoặc giao tiếp với cơ sở dữ liệu. Hiểu rõ cách thức hoạt động của bất đồng bộ sẽ giúp bạn viết mã hiệu quả và tránh các lỗi khó xử lý.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;lập-trình-bất-đồng-bộ-là-gì&#34;&gt;Lập trình bất đồng bộ là gì?&lt;/h2&gt;&#xA;&lt;p&gt;Lập trình bất đồng bộ cho phép các tác vụ mất thời gian được thực thi mà không chặn luồng chính (main thread). Điều này giúp giao diện người dùng vẫn mượt mà trong khi các tác vụ nền đang chạy.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chuyên sâu về Event Loop trong JavaScript</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/</link>
+      <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/javascript-loop/</link>
       <pubDate>Thu, 26 Dec 2024 18:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/</guid>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/javascript-loop/</guid>
       <description>&lt;h1 id=&#34;chuyên-sâu-về-event-loop-trong-javascript&#34;&gt;Chuyên sâu về Event Loop trong JavaScript&lt;/h1&gt;&#xA;&lt;p&gt;Event Loop là trái tim của JavaScript, giúp quản lý và điều phối các tác vụ bất đồng bộ. Hiểu rõ về Event Loop là chìa khóa để giải thích tại sao một số đoạn mã JavaScript lại hoạt động như vậy.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;event-loop-là-gì&#34;&gt;Event Loop là gì?&lt;/h2&gt;&#xA;&lt;p&gt;JavaScript là một ngôn ngữ đơn luồng (&lt;strong&gt;single-threaded&lt;/strong&gt;), nhưng nó có thể xử lý nhiều tác vụ bất đồng bộ nhờ cơ chế Event Loop. Event Loop chịu trách nhiệm:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chuyên sâu về Java Networking</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/</link>
+      <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-networking/</link>
       <pubDate>Thu, 26 Dec 2024 19:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/</guid>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-networking/</guid>
       <description>&lt;h1 id=&#34;chuyên-sâu-về-java-networking&#34;&gt;Chuyên sâu về Java Networking&lt;/h1&gt;&#xA;&lt;p&gt;Java cung cấp một API mạnh mẽ để lập trình mạng, giúp các ứng dụng Java giao tiếp qua mạng dễ dàng. Từ việc thiết lập kết nối TCP/IP đến việc gửi và nhận dữ liệu, Java Networking hỗ trợ cả client và server.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;java-networking-là-gì&#34;&gt;Java Networking là gì?&lt;/h2&gt;&#xA;&lt;p&gt;Java Networking bao gồm các lớp và giao thức hỗ trợ lập trình mạng như TCP, UDP, và HTTP. API này nằm trong gói &lt;code&gt;java.net&lt;/code&gt;, cung cấp các lớp như &lt;code&gt;Socket&lt;/code&gt;, &lt;code&gt;ServerSocket&lt;/code&gt;, &lt;code&gt;InetAddress&lt;/code&gt;, và nhiều hơn nữa.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chuyên sâu về Java Memory Management</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/</link>
+      <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-memory-management/</link>
       <pubDate>Thu, 26 Dec 2024 20:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/</guid>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/java-memory-management/</guid>
       <description>&lt;h1 id=&#34;chuyên-sâu-về-java-memory-management&#34;&gt;Chuyên sâu về Java Memory Management&lt;/h1&gt;&#xA;&lt;p&gt;Java Memory Management (quản lý bộ nhớ) là một phần quan trọng trong việc phát triển ứng dụng Java hiệu quả. Nó bao gồm cách bộ nhớ được phân bổ, sử dụng, và giải phóng tự động thông qua &lt;strong&gt;Garbage Collection&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;các-vùng-bộ-nhớ-trong-java&#34;&gt;Các vùng bộ nhớ trong Java&lt;/h2&gt;&#xA;&lt;p&gt;Java Virtual Machine (JVM) quản lý bộ nhớ theo các vùng chính:&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-heap&#34;&gt;1. &lt;strong&gt;Heap&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mô tả&lt;/strong&gt;: Dùng để lưu trữ các đối tượng và biến toàn cục.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Quản lý&lt;/strong&gt;: Heap được chia thành hai vùng chính:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Young Generation&lt;/strong&gt;: Chứa các đối tượng mới tạo. Bao gồm:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Eden Space&lt;/strong&gt;: Nơi khởi tạo đối tượng mới.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Survivor Spaces&lt;/strong&gt;: Lưu trữ các đối tượng sống sót sau mỗi chu kỳ GC.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Old Generation&lt;/strong&gt;: Chứa các đối tượng tồn tại lâu dài.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2-stack&#34;&gt;2. &lt;strong&gt;Stack&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mô tả&lt;/strong&gt;: Lưu trữ các biến cục bộ và khung ngăn xếp (stack frames) của từng luồng.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Đặc điểm&lt;/strong&gt;: Dữ liệu trong Stack có vòng đời ngắn và được quản lý tự động theo LIFO (Last In, First Out).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;3-metaspace&#34;&gt;3. &lt;strong&gt;Metaspace&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mô tả&lt;/strong&gt;: Lưu trữ thông tin về các lớp (class metadata).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Điểm khác biệt&lt;/strong&gt;: Thay thế PermGen từ Java 8, với khả năng mở rộng động.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;garbage-collection-gc&#34;&gt;Garbage Collection (GC)&lt;/h2&gt;&#xA;&lt;p&gt;Garbage Collection tự động giải phóng bộ nhớ không còn được tham chiếu, giúp giảm nguy cơ rò rỉ bộ nhớ (memory leaks).&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Event Loop on Nguyễn Việt Anh Blog</title>
-    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/event-loop/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/tags/event-loop/</link>
     <description>Recent content in Event Loop on Nguyễn Việt Anh Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Dec 2024 18:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/event-loop/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/tags/event-loop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chuyên sâu về Event Loop trong JavaScript</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/</link>
+      <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/javascript-loop/</link>
       <pubDate>Thu, 26 Dec 2024 18:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/</guid>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/javascript-loop/</guid>
       <description>&lt;h1 id=&#34;chuyên-sâu-về-event-loop-trong-javascript&#34;&gt;Chuyên sâu về Event Loop trong JavaScript&lt;/h1&gt;&#xA;&lt;p&gt;Event Loop là trái tim của JavaScript, giúp quản lý và điều phối các tác vụ bất đồng bộ. Hiểu rõ về Event Loop là chìa khóa để giải thích tại sao một số đoạn mã JavaScript lại hoạt động như vậy.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;event-loop-là-gì&#34;&gt;Event Loop là gì?&lt;/h2&gt;&#xA;&lt;p&gt;JavaScript là một ngôn ngữ đơn luồng (&lt;strong&gt;single-threaded&lt;/strong&gt;), nhưng nó có thể xử lý nhiều tác vụ bất đồng bộ nhờ cơ chế Event Loop. Event Loop chịu trách nhiệm:&lt;/p&gt;</description>
     </item>
   </channel>
