@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Asynchronous Programming on Nguyễn Việt Anh Blog</title>
-    <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/tags/asynchronous-programming/</link>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/asynchronous-programming/</link>
     <description>Recent content in Asynchronous Programming on Nguyễn Việt Anh Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Dec 2024 17:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/tags/asynchronous-programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/asynchronous-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/javascript-async/</link>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-async/</link>
       <pubDate>Thu, 26 Dec 2024 17:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/Personal-Profile/posts/javascript-async/</guid>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-async/</guid>
       <description>&lt;h1 id=&#34;chuyên-sâu-về-lập-trình-bất-đồng-bộ-trong-javascript&#34;&gt;Chuyên sâu về Lập trình bất đồng bộ trong JavaScript&lt;/h1&gt;&#xA;&lt;p&gt;Lập trình bất đồng bộ là một phần quan trọng của JavaScript, đặc biệt trong việc xử lý các tác vụ như gọi API, đọc/ghi file, hoặc giao tiếp với cơ sở dữ liệu. Hiểu rõ cách thức hoạt động của bất đồng bộ sẽ giúp bạn viết mã hiệu quả và tránh các lỗi khó xử lý.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;lập-trình-bất-đồng-bộ-là-gì&#34;&gt;Lập trình bất đồng bộ là gì?&lt;/h2&gt;&#xA;&lt;p&gt;Lập trình bất đồng bộ cho phép các tác vụ mất thời gian được thực thi mà không chặn luồng chính (main thread). Điều này giúp giao diện người dùng vẫn mượt mà trong khi các tác vụ nền đang chạy.&lt;/p&gt;</description>
     </item>
   </channel>
