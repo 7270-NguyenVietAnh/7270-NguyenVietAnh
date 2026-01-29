@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Object-Oriented Programming on Nguyễn Việt Anh Blog</title>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/object-oriented-programming/</link>
+    <description>Recent content in Object-Oriented Programming on Nguyễn Việt Anh Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Dec 2024 14:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/object-oriented-programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java Object-Oriented Programming</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-oop/</link>
+      <pubDate>Thu, 26 Dec 2024 14:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-oop/</guid>
+      <description>&lt;h1 id=&#34;introduction-to-object-oriented-programming-in-java&#34;&gt;Introduction to Object-Oriented Programming in Java&lt;/h1&gt;&#xA;&lt;p&gt;Object-Oriented Programming (OOP) is a powerful programming paradigm that helps organize and process data in complex programs. Java, with its full support for OOP features, is one of the most popular languages used to develop large and powerful applications.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-concepts-in-object-oriented-programming&#34;&gt;Key Concepts in Object-Oriented Programming&lt;/h2&gt;&#xA;&lt;p&gt;Object-Oriented Programming includes four fundamental principles:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Encapsulation&lt;/strong&gt;: Data and methods are encapsulated into objects. This helps protect data and control access to it.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Abstraction&lt;/strong&gt;: Only display necessary details and hide unnecessary details, helping reduce system complexity.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Inheritance&lt;/strong&gt;: Allows creating subclasses that inherit attributes and methods from a parent class, helping reuse source code.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Polymorphism&lt;/strong&gt;: Allows using a method in different ways of execution, depending on the object calling it.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;structure-of-a-class-in-java&#34;&gt;Structure of a Class in Java&lt;/h2&gt;&#xA;&lt;p&gt;A class in Java can contain fields (variables) and methods. Below is an example of a simple class in Java:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

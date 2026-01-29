@@ -1,51 +1,75 @@
-# 👋 Chào bạn, tôi là **Nguyễn Việt Anh**
+# 👋 Hi, I’m **Nguyen Viet Anh**
+
 ![Avatar](https://www.gravatar.com/avatar/2cef745351c9633b7eca9358ed3255fb?s=240&d=mp)
 
 ---
 
-## 📚 Thông tin về tôi
-Tôi hiện tại là sinh viên năm 4 ngành Công Nghệ Thông Tin , chuyên ngành Công Nghệ Phần Mềm .Tôi luôn tìm kiếm cơ hội để hợp tác trong các dự án thú vị và học hỏi thêm về các công nghệ mới. Nếu bạn có ý tưởng nào hoặc cần hỗ trợ về phát triển phần mềm, đừng ngần ngại liên hệ với tôi!
+## 📚 About Me
+
+I am a Software Engineering graduate with a Bachelor’s degree in Information Technology (Good classification, GPA: 2.92/4).
+
+I am passionate about backend development, especially using C# and .NET technologies.  
+I am currently seeking **Internship or Fresher Backend Developer (C#/.NET)** opportunities where I can apply my knowledge, gain real-world experience, and grow as a software engineer.
 
 ---
 
-## 📬 Liên hệ với tôi
-Nếu bạn muốn kết nối hoặc có bất kỳ câu hỏi nào, đừng ngần ngại liên hệ với tôi qua email:
+## 🎓 Education
+
+**Bachelor of Software Engineering**  
+Information Technology  
+GPA: **2.92 / 4.0 (Good classification)**
+
+---
+
+## 📬 Contact
+
+Feel free to reach out if you would like to connect or collaborate:
 
 📧 **Email:** [nguyenvietanh08022003@gmail.com](mailto:nguyenvietanh08022003@gmail.com)
 
 ---
 
-## 🌍 Mạng xã hội
-Bạn có thể tìm thấy tôi ở các nền tảng sau:
+## 🌍 Social Links
 
 - 🌐 [Facebook](https://www.facebook.com/profile.php?id=100011770384069)  
 - 💻 [GitHub](https://github.com/7270-NguyenVietAnh)  
 
 ---
-## 👨‍💻 Kỹ năng lập trình của tôi
-| Kỹ năng          | Mức độ       |
-|-------------------|--------------|
-| Java             | ⭐⭐⭐          |
-| C#               | ⭐⭐⭐⭐         |
-| JavaScript       | ⭐⭐           |
-| HTML             | ⭐⭐           |
-| C                | ⭐⭐           |
-| C++              | ⭐⭐           |
-| Markdown         | ⭐            |
----
 
-## 🎓 Chứng chỉ
-Dưới đây là chứng chỉ của tôi:
+## 👨‍💻 Technical Skills
 
-### 🌐 Network Basic Badge
-![Chứng chỉ Network Basic](network_basic_badge.png)
-
-### 🌐 JavaScript Essentials 1 Badge
-![Chứng chỉ JavaScript Essentials 1](javascript_essentials_1_badge.png) 
-
-### 🌐 JavaScript Essentials 2 Badge
-![Chứng chỉ JavaScript Essentials 2](javascript_essentials_2_badge.png)
+| Skill        | Level |
+|-------------|-------|
+| C# (.NET)   | ⭐⭐⭐⭐ |
+| Java        | ⭐⭐⭐ |
+| JavaScript | ⭐⭐ |
+| HTML/CSS   | ⭐⭐ |
+| C           | ⭐⭐ |
+| C++         | ⭐⭐ |
+| Markdown    | ⭐ |
 
 ---
 
-🌱 **Cảm ơn bạn đã ghé thăm trang của tôi!**
+## 🎯 Career Objective
+
+To become a professional Backend Developer specializing in **C#/.NET**, focusing on building scalable APIs and backend systems while continuously improving my skills in databases, software architecture, and clean code practices.
+
+---
+
+## 🎓 Certifications
+
+<!-- ### 🌐 Network Basics Badge  
+![Network Basic](network_basic_badge.png)
+
+### 🌐 JavaScript Essentials 1  
+![JavaScript Essentials 1](javascript_essentials_1_badge.png)
+
+### 🌐 JavaScript Essentials 2  
+![JavaScript Essentials 2](javascript_essentials_2_badge.png) -->
+
+### 🌐 Foundational C# with Microsoft  
+![Foundational C#](Foundational_CSharp_with_Microsoft.png)
+
+---
+
+🌱 **Thank you for visiting my portfolio!**

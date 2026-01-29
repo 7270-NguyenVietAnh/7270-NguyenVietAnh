@@ -1,12 +1,12 @@
 ---
 weight: 1
-title: "Java Cơ Bản"
+title: "Java Basics"
 date: 2024-12-26T12:00:00+08:00
 lastmod: 2024-12-26T12:00:00+08:00
 draft: false
 author: "ChatGPT"
 authorLink: "https://chatgpt.com"
-description: "Java cơ bản"
+description: "Java Basics"
 images: []
 resources:
 - name: "featured-image"
@@ -18,49 +18,49 @@ categories: ["Java"]
 lightgallery: true
 ---
 
-# Giới thiệu về Java
+# Introduction to Java
 
-Java là một ngôn ngữ lập trình hướng đối tượng, được phát triển bởi Sun Microsystems vào năm 1995. Java là một trong những ngôn ngữ phổ biến nhất trên thế giới nhờ tính đơn giản, tính di động, và khả năng mở rộng.
+Java is an object-oriented programming language developed by Sun Microsystems in 1995. Java is one of the most popular programming languages in the world due to its simplicity, portability, and scalability.
 
-## Đặc điểm của Java
+## Java Features
 
-1. **Hướng đối tượng**: Java hỗ trợ đầy đủ các khái niệm hướng đối tượng như kế thừa, đóng gói, đa hình và trừu tượng.
-2. **Độc lập nền tảng**: Java sử dụng Java Virtual Machine (JVM) để chạy mã, do đó bạn chỉ cần viết mã một lần và có thể chạy trên nhiều nền tảng khác nhau.
-3. **Bảo mật**: Java được thiết kế với các cơ chế bảo mật tích hợp, giúp bảo vệ ứng dụng khỏi các cuộc tấn công.
-4. **Hiệu năng cao**: Mặc dù Java không nhanh như C++, JVM và các tối ưu hóa của Java đã giúp cải thiện hiệu suất đáng kể.
-5. **Thư viện phong phú**: Java cung cấp rất nhiều thư viện và API hỗ trợ cho việc phát triển ứng dụng từ đơn giản đến phức tạp.
+1. **Object-Oriented**: Java fully supports object-oriented concepts such as inheritance, encapsulation, polymorphism, and abstraction.
+2. **Platform Independent**: Java uses the Java Virtual Machine (JVM) to run code, so you only need to write the code once and can run it on multiple different platforms.
+3. **Security**: Java is designed with built-in security mechanisms to protect applications from attacks.
+4. **High Performance**: Although Java is not as fast as C++, the JVM and Java optimizations have significantly improved performance.
+5. **Rich Libraries**: Java provides a wide range of libraries and APIs to support application development from simple to complex.
 
-## Cấu trúc cơ bản của một chương trình Java
+## Basic Structure of a Java Program
 
-Dưới đây là ví dụ về một chương trình Java đơn giản:
+Below is an example of a simple Java program:
 
 ```java
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Xin chào thế giới!");
+        System.out.println("Hello World!");
     }
 }
 ```
 
-### Giải thích:
-- `public class HelloWorld`: Khai báo một lớp có tên là `HelloWorld`.
-- `public static void main(String[] args)`: Đây là phương thức chính, nơi chương trình bắt đầu thực thi.
-- `System.out.println`: In một dòng văn bản ra màn hình.
+### Explanation:
+- `public class HelloWorld`: Declares a class named `HelloWorld`.
+- `public static void main(String[] args)`: This is the main method where the program starts execution.
+- `System.out.println`: Prints a line of text to the screen.
 
-## Các kiểu dữ liệu trong Java
+## Data Types in Java
 
-Java hỗ trợ nhiều kiểu dữ liệu khác nhau, bao gồm:
+Java supports many different data types, including:
 
-1. **Kiểu nguyên thủy**:
-   - `int`: Số nguyên.
-   - `float`: Số thực dấu phẩy động.
-   - `char`: Ký tự.
-   - `boolean`: Giá trị đúng/sai.
-2. **Kiểu tham chiếu**:
-   - Đối tượng (object).
-   - Mảng (array).
+1. **Primitive Types**:
+   - `int`: Integer.
+   - `float`: Floating point number.
+   - `char`: Character.
+   - `boolean`: True/false value.
+2. **Reference Types**:
+   - Object.
+   - Array.
 
-Ví dụ:
+Example:
 
 ```java
 int age = 25;
@@ -69,17 +69,17 @@ char gender = 'M';
 boolean isStudent = true;
 ```
 
-## Các câu lệnh điều kiện
+## Conditional Statements
 
-Java cung cấp các câu lệnh điều kiện để kiểm soát luồng thực thi của chương trình, chẳng hạn:
+Java provides conditional statements to control the execution flow of the program, such as:
 
 ### If-Else:
 
 ```java
 if (age > 18) {
-    System.out.println("Bạn đã đủ tuổi.");
+    System.out.println("You are old enough.");
 } else {
-    System.out.println("Bạn chưa đủ tuổi.");
+    System.out.println("You are not old enough.");
 }
 ```
 
@@ -88,38 +88,38 @@ if (age > 18) {
 ```java
 switch (day) {
     case 1:
-        System.out.println("Chủ nhật");
+        System.out.println("Sunday");
         break;
     case 2:
-        System.out.println("Thứ hai");
+        System.out.println("Monday");
         break;
     default:
-        System.out.println("Không hợp lệ");
+        System.out.println("Invalid");
 }
 ```
 
-## Vòng lặp trong Java
+## Loops in Java
 
-Java hỗ trợ nhiều loại vòng lặp để lặp lại các thao tác:
+Java supports many types of loops to repeat operations:
 
-### Vòng lặp For:
+### For Loop:
 
 ```java
 for (int i = 0; i < 5; i++) {
-    System.out.println("Lặp lần: " + i);
+    System.out.println("Loop iteration: " + i);
 }
 ```
 
-### Vòng lặp While:
+### While Loop:
 
 ```java
 int i = 0;
 while (i < 5) {
-    System.out.println("Lặp lần: " + i);
+    System.out.println("Loop iteration: " + i);
     i++;
 }
 ```
 
-## Kết luận
+## Conclusion
 
-Java là một ngôn ngữ mạnh mẽ, dễ học và phù hợp với nhiều loại ứng dụng, từ ứng dụng di động, web, đến các hệ thống lớn. Hiểu rõ các khái niệm cơ bản là bước đầu tiên để trở thành một lập trình viên Java chuyên nghiệp.
+Java is a powerful, easy to learn language suitable for many types of applications, from mobile applications, web applications to large systems. Understanding the basic concepts is the first step to becoming a professional Java programmer.

@@ -1,12 +1,12 @@
 ---
 weight: 2
-title: "JavaScript Cơ Bản"
+title: "JavaScript Basics"
 date: 2024-12-26T13:00:00+08:00
 lastmod: 2024-12-26T13:00:00+08:00
 draft: false
 author: "ChatGPT"
 authorLink: "https://chatgpt.com"
-description: "JavaScript cơ bản"
+description: "JavaScript Basics"
 images: []
 resources:
 - name: "featured-image"
@@ -18,20 +18,20 @@ categories: ["JavaScript"]
 lightgallery: true
 ---
 
-# Giới thiệu về JavaScript
+# Introduction to JavaScript
 
-JavaScript là một ngôn ngữ lập trình kịch bản phổ biến, chủ yếu được sử dụng để tạo các trang web động và tương tác. JavaScript được phát triển lần đầu tiên bởi Netscape vào năm 1995 và hiện nay là một trong những ngôn ngữ quan trọng nhất trong phát triển web.
+JavaScript is a popular scripting language, primarily used to create dynamic and interactive web pages. JavaScript was first developed by Netscape in 1995 and is now one of the most important languages in web development.
 
-## Đặc điểm của JavaScript
+## Features of JavaScript
 
-1. **Lập trình hướng đối tượng**: JavaScript hỗ trợ lập trình hướng đối tượng, cho phép bạn tạo ra các đối tượng và kế thừa.
-2. **Chạy trên mọi trình duyệt**: JavaScript có thể chạy trên tất cả các trình duyệt web hiện đại mà không cần cài đặt phần mềm bổ sung.
-3. **Tính linh hoạt cao**: JavaScript có thể được sử dụng cho cả lập trình phía client (trình duyệt) và phía server (với Node.js).
-4. **Cộng đồng lớn và thư viện phong phú**: JavaScript có một cộng đồng phát triển rộng lớn và rất nhiều thư viện mã nguồn mở như React, Angular, Vue.js giúp phát triển ứng dụng nhanh chóng và hiệu quả.
+1. **Object-Oriented Programming**: JavaScript supports object-oriented programming, allowing you to create objects and inheritance.
+2. **Runs on All Browsers**: JavaScript can run on all modern web browsers without requiring additional software installation.
+3. **High Flexibility**: JavaScript can be used for both client-side (browser) and server-side programming (with Node.js).
+4. **Large Community and Rich Libraries**: JavaScript has a large development community and many open-source libraries like React, Angular, Vue.js that help develop applications quickly and efficiently.
 
-## Cấu trúc cơ bản của một chương trình JavaScript
+## Basic Structure of a JavaScript Program
 
-Dưới đây là ví dụ về một chương trình JavaScript đơn giản:
+Below is an example of a simple JavaScript program:
 
 ```javascript
-console.log("Xin chào thế giới!");
+console.log("Hello World!");

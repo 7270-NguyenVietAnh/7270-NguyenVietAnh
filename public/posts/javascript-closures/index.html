@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Hiểu sâu về Closures trong JavaScript - Nguyễn Việt Anh Blog</title><meta name="Description" content="Tìm hiểu chuyên sâu về JavaScript Closures, một trong những khái niệm quan trọng trong lập trình JavaScript."><meta property="og:url" content="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/">
+        <title>Deep Understanding of Closures in JavaScript - Nguyễn Việt Anh Blog</title><meta name="Description" content="Learn in-depth about JavaScript Closures, one of the important concepts in JavaScript programming."><meta property="og:url" content="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/">
   <meta property="og:site_name" content="Nguyễn Việt Anh Blog">
-  <meta property="og:title" content="Hiểu sâu về Closures trong JavaScript">
-  <meta property="og:description" content="Tìm hiểu chuyên sâu về JavaScript Closures, một trong những khái niệm quan trọng trong lập trình JavaScript.">
+  <meta property="og:title" content="Deep Understanding of Closures in JavaScript">
+  <meta property="og:description" content="Learn in-depth about JavaScript Closures, one of the important concepts in JavaScript programming.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -20,8 +20,8 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/featured-image.png">
-  <meta name="twitter:title" content="Hiểu sâu về Closures trong JavaScript">
-  <meta name="twitter:description" content="Tìm hiểu chuyên sâu về JavaScript Closures, một trong những khái niệm quan trọng trong lập trình JavaScript.">
+  <meta name="twitter:title" content="Deep Understanding of Closures in JavaScript">
+  <meta name="twitter:description" content="Learn in-depth about JavaScript Closures, one of the important concepts in JavaScript programming.">
 <meta name="application-name" content="My KeepIt site">
 <meta name="apple-mobile-web-app-title" content="My KeepIt site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +29,7 @@
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Hiểu sâu về Closures trong JavaScript",
+        "headline": "Deep Understanding of Closures in JavaScript",
         "inLanguage": "en-us",
         "mainEntityOfPage": {
             "@type": "WebPage",
@@ -39,13 +39,13 @@
                             "url": "http:\/\/localhost:1313\/7270-NguyenVietAnh\/7270-NguyenVietAnh\/posts\/javascript-closures\/featured-image.png",
                             "width":  1256 ,
                             "height":  712 
-                        }],"genre": "posts","keywords": "JavaScript, Closures, Advanced JavaScript","wordcount":  147 ,
+                        }],"genre": "posts","keywords": "JavaScript, Closures, Advanced JavaScript","wordcount":  124 ,
         "url": "http:\/\/localhost:1313\/7270-NguyenVietAnh\/7270-NguyenVietAnh\/posts\/javascript-closures\/","datePublished": "2024-12-26T15:00:00+08:00","dateModified": "2024-12-26T15:00:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
                 "name": "ChatGPT"
-            },"description": "Tìm hiểu chuyên sâu về JavaScript Closures, một trong những khái niệm quan trọng trong lập trình JavaScript."
+            },"description": "Learn in-depth about JavaScript Closures, one of the important concepts in JavaScript programming."
     }
     </script></head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -53,7 +53,7 @@
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Trang chủ</a>
+            <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Home</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/aboutme/"> About Me </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/"> Posts </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/"> Tags </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
@@ -77,7 +77,7 @@
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Trang chủ</a>
+                <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Home</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -112,10 +112,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Hiểu sâu về Closures trong JavaScript</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Deep Understanding of Closures in JavaScript</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://chatgpt.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ChatGPT</a>
 </span>&nbsp;<span class="post-category">included in <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/javascript/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>JavaScript</a>&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Advanced Concepts</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-12-26">2024-12-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;147 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-12-26">2024-12-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;124 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -124,32 +124,32 @@
         data-srcset="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/featured-image.png, /7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/featured-image.png 1.5x, /7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/featured-image.png 2x"
         data-sizes="auto"
         alt="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/featured-image.png"
-        title="Tìm hiểu chuyên sâu về JavaScript Closures, một trong những khái niệm quan trọng trong lập trình JavaScript." /></div><div class="details toc" id="toc-static"  data-kept="">
+        title="Learn in-depth about JavaScript Closures, one of the important concepts in JavaScript programming." /></div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#closures-là-gì">Closures là gì?</a>
+    <li><a href="#what-are-closures">What are Closures?</a>
       <ul>
-        <li><a href="#định-nghĩa">Định nghĩa:</a></li>
+        <li><a href="#definition">Definition:</a></li>
       </ul>
     </li>
-    <li><a href="#ví-dụ-cơ-bản-về-closures">Ví dụ cơ bản về Closures</a></li>
+    <li><a href="#basic-example-of-closures">Basic Example of Closures</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h1 id="hiểu-sâu-về-closures-trong-javascript">Hiểu sâu về Closures trong JavaScript</h1>
-<p><strong>Closures</strong> là một trong những khái niệm mạnh mẽ và thường gây nhầm lẫn trong JavaScript. Chúng ta sẽ tìm hiểu closures là gì, cách chúng hoạt động, và tại sao chúng rất quan trọng trong lập trình JavaScript.</p>
+            </div><div class="content" id="content"><h1 id="deep-understanding-of-closures-in-javascript">Deep Understanding of Closures in JavaScript</h1>
+<p><strong>Closures</strong> is one of the powerful and often confusing concepts in JavaScript. We will explore what closures are, how they work, and why they are very important in JavaScript programming.</p>
 <hr>
-<h2 id="closures-là-gì">Closures là gì?</h2>
-<p>Closures xảy ra khi một hàm &ldquo;nhớ&rdquo; được phạm vi (scope) nơi nó được tạo ra, ngay cả khi hàm đó được gọi bên ngoài phạm vi đó.</p>
-<h3 id="định-nghĩa">Định nghĩa:</h3>
+<h2 id="what-are-closures">What are Closures?</h2>
+<p>Closures occur when a function &ldquo;remembers&rdquo; the scope (scope) where it was created, even when that function is called outside of that scope.</p>
+<h3 id="definition">Definition:</h3>
 <blockquote>
-<p><strong>Closure</strong> là sự kết hợp giữa một hàm và phạm vi từ vựng (lexical environment) mà hàm được định nghĩa.</p></blockquote>
+<p><strong>Closure</strong> is a combination of a function and the lexical environment in which the function is defined.</p></blockquote>
 <hr>
-<h2 id="ví-dụ-cơ-bản-về-closures">Ví dụ cơ bản về Closures</h2>
-<p>Hãy cùng xem một ví dụ đơn giản để hiểu rõ hơn:</p>
+<h2 id="basic-example-of-closures">Basic Example of Closures</h2>
+<p>Let&rsquo;s look at a simple example to understand better:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">outerFunction</span>() {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">outerVariable</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;I am from outer scope&#34;</span>;
 </span></span><span style="display:flex;"><span>
@@ -171,7 +171,7 @@
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/" data-title="Hiểu sâu về Closures trong JavaScript" data-hashtags="JavaScript,Closures,Advanced JavaScript"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/" data-hashtag="JavaScript"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/" data-title="Hiểu sâu về Closures trong JavaScript"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/" data-title="Hiểu sâu về Closures trong JavaScript"><i data-svg-src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/" data-title="Hiểu sâu về Closures trong JavaScript"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/" data-title="Deep Understanding of Closures in JavaScript" data-hashtags="JavaScript,Closures,Advanced JavaScript"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/" data-hashtag="JavaScript"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/" data-title="Deep Understanding of Closures in JavaScript"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/" data-title="Deep Understanding of Closures in JavaScript"><i data-svg-src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/" data-title="Deep Understanding of Closures in JavaScript"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -183,8 +183,8 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/" class="prev" rel="prev" title="Hiểu sâu về Java Stream API"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Hiểu sâu về Java Stream API</a>
-            <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-oop/" class="next" rel="next" title="Lập trình Java Hướng Đối Tượng">Lập trình Java Hướng Đối Tượng<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/" class="prev" rel="prev" title="Deep Understanding of Java Stream API"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Deep Understanding of Java Stream API</a>
+            <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-oop/" class="next" rel="next" title="Java Object-Oriented Programming">Java Object-Oriented Programming<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">

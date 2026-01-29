@@ -31,7 +31,7 @@
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Trang chủ</a>
+            <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Home</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/aboutme/"> About Me </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/"> Posts </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/"> Tags </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
@@ -55,7 +55,7 @@
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Trang chủ</a>
+                <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Home</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -106,15 +106,32 @@
         data-srcset="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/featured-image.jpg, /7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/featured-image.jpg 1.5x, /7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/featured-image.jpg 2x"
         data-sizes="auto"
         alt="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/featured-image.jpg"
-        title="Khám phá cơ chế Event Loop trong JavaScript, giúp hiểu rõ cách xử lý bất đồng bộ và ưu tiên thực thi trong ngôn ngữ này." /></a>
+        title="Explore the Event Loop mechanism in JavaScript, helping understand how asynchronous processing and execution priority work in this language." /></a>
         </div><h1 class="single-title" itemprop="name headline">
-        <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/">Chuyên sâu về Event Loop trong JavaScript</a>
+        <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/">Deep Dive into Event Loop in JavaScript</a>
     </h1><div class="post-meta"><span class="post-author"><a href="https://chatgpt.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ChatGPT</a>
-</span>&nbsp;<span class="post-publish">published on <time datetime="2024-12-26">2024-12-26</time></span>&nbsp;<span class="post-category">included in <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/javascript/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>JavaScript</a>&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Advanced Concepts</a></span></div><div class="content"><h1 id="chuyên-sâu-về-event-loop-trong-javascript">Chuyên sâu về Event Loop trong JavaScript</h1>
-<p>Event Loop là trái tim của JavaScript, giúp quản lý và điều phối các tác vụ bất đồng bộ. Hiểu rõ về Event Loop là chìa khóa để giải thích tại sao một số đoạn mã JavaScript lại hoạt động như vậy.</p>
+</span>&nbsp;<span class="post-publish">published on <time datetime="2024-12-26">2024-12-26</time></span>&nbsp;<span class="post-category">included in <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/javascript/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>JavaScript</a>&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Advanced Concepts</a></span></div><div class="content"><h1 id="deep-dive-into-event-loop-in-javascript">Deep Dive into Event Loop in JavaScript</h1>
+<p>Event Loop is the heart of JavaScript, helping manage and coordinate asynchronous tasks. Understanding Event Loop is key to explaining why some JavaScript code behaves the way it does.</p>
 <hr>
-<h2 id="event-loop-là-gì">Event Loop là gì?</h2>
-<p>JavaScript là một ngôn ngữ đơn luồng (<strong>single-threaded</strong>), nhưng nó có thể xử lý nhiều tác vụ bất đồng bộ nhờ cơ chế Event Loop. Event Loop chịu trách nhiệm:</p></div><div class="post-footer">
+<h2 id="what-is-event-loop">What is Event Loop?</h2>
+<p>JavaScript is a <strong>single-threaded</strong> language, but it can handle multiple asynchronous tasks thanks to the Event Loop mechanism. Event Loop is responsible for:</p>
+<ul>
+<li>Listening to events from the queue.</li>
+<li>Managing the main thread (call stack).</li>
+<li>Ensuring asynchronous tasks execute in the correct order.</li>
+</ul>
+<hr>
+<h2 id="main-components">Main Components</h2>
+<ol>
+<li><strong>Call Stack</strong>: Where JavaScript instructions are executed sequentially.</li>
+<li><strong>Web APIs</strong>: Provides the environment to run asynchronous tasks like <code>setTimeout</code>, <code>fetch</code>, or DOM events.</li>
+<li><strong>Callback Queue</strong>: Queue where callbacks wait to be executed after the call stack is empty.</li>
+<li><strong>Event Loop</strong>: Monitors the call stack and callback queue to decide when to move a function from queue to stack.</li>
+</ol>
+<hr>
+<h2 id="how-event-loop-works">How Event Loop Works</h2>
+<h3 id="1-synchronous">1. Synchronous:</h3>
+<p>Instructions are executed directly in the <strong>call stack</strong>.</p></div><div class="post-footer">
         <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/javascript/">JavaScript</a>,&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/event-loop/">Event Loop</a>,&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/javascript-advanced/">JavaScript Advanced</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
@@ -125,15 +142,15 @@
         data-srcset="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/featured-image.jpg, /7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/featured-image.jpg 1.5x, /7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/featured-image.jpg 2x"
         data-sizes="auto"
         alt="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/featured-image.jpg"
-        title="Tìm hiểu sâu về Java Networking, bao gồm cách sử dụng Socket, ServerSocket, và giao tiếp mạng trong các ứng dụng Java." /></a>
+        title="Learn deep insights into Java Networking, including how to use Socket, ServerSocket, and network communication in Java applications." /></a>
         </div><h1 class="single-title" itemprop="name headline">
-        <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/">Chuyên sâu về Java Networking</a>
+        <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/">Deep Dive into Java Networking</a>
     </h1><div class="post-meta"><span class="post-author"><a href="https://chatgpt.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ChatGPT</a>
-</span>&nbsp;<span class="post-publish">published on <time datetime="2024-12-26">2024-12-26</time></span>&nbsp;<span class="post-category">included in <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/java/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Java</a>&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Advanced Concepts</a></span></div><div class="content"><h1 id="chuyên-sâu-về-java-networking">Chuyên sâu về Java Networking</h1>
-<p>Java cung cấp một API mạnh mẽ để lập trình mạng, giúp các ứng dụng Java giao tiếp qua mạng dễ dàng. Từ việc thiết lập kết nối TCP/IP đến việc gửi và nhận dữ liệu, Java Networking hỗ trợ cả client và server.</p>
+</span>&nbsp;<span class="post-publish">published on <time datetime="2024-12-26">2024-12-26</time></span>&nbsp;<span class="post-category">included in <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/java/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Java</a>&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Advanced Concepts</a></span></div><div class="content"><h1 id="deep-dive-into-java-networking">Deep Dive into Java Networking</h1>
+<p>Java provides a powerful API for network programming, allowing Java applications to communicate over networks easily. From establishing TCP/IP connections to sending and receiving data, Java Networking supports both client and server.</p>
 <hr>
-<h2 id="java-networking-là-gì">Java Networking là gì?</h2>
-<p>Java Networking bao gồm các lớp và giao thức hỗ trợ lập trình mạng như TCP, UDP, và HTTP. API này nằm trong gói <code>java.net</code>, cung cấp các lớp như <code>Socket</code>, <code>ServerSocket</code>, <code>InetAddress</code>, và nhiều hơn nữa.</p></div><div class="post-footer">
+<h2 id="what-is-java-networking">What is Java Networking?</h2>
+<p>Java Networking includes classes and protocols that support network programming such as TCP, UDP, and HTTP. This API is located in the <code>java.net</code> package, providing classes such as <code>Socket</code>, <code>ServerSocket</code>, <code>InetAddress</code>, and more.</p></div><div class="post-footer">
         <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/java/">Java</a>,&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/networking/">Networking</a>,&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/sockets/">Sockets</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
@@ -144,43 +161,43 @@
         data-srcset="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/featured-image.jpg, /7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/featured-image.jpg 1.5x, /7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/featured-image.jpg 2x"
         data-sizes="auto"
         alt="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/featured-image.jpg"
-        title="Tìm hiểu sâu về quản lý bộ nhớ trong Java, bao gồm Heap, Stack, Garbage Collection, và tối ưu hóa hiệu suất bộ nhớ." /></a>
+        title="Learn deep insights into Java memory management, including Heap, Stack, Garbage Collection, and memory performance optimization." /></a>
         </div><h1 class="single-title" itemprop="name headline">
-        <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/">Chuyên sâu về Java Memory Management</a>
+        <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/">Deep Dive into Java Memory Management</a>
     </h1><div class="post-meta"><span class="post-author"><a href="https://chatgpt.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ChatGPT</a>
-</span>&nbsp;<span class="post-publish">published on <time datetime="2024-12-26">2024-12-26</time></span>&nbsp;<span class="post-category">included in <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/java/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Java</a>&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Advanced Concepts</a></span></div><div class="content"><h1 id="chuyên-sâu-về-java-memory-management">Chuyên sâu về Java Memory Management</h1>
-<p>Java Memory Management (quản lý bộ nhớ) là một phần quan trọng trong việc phát triển ứng dụng Java hiệu quả. Nó bao gồm cách bộ nhớ được phân bổ, sử dụng, và giải phóng tự động thông qua <strong>Garbage Collection</strong>.</p>
+</span>&nbsp;<span class="post-publish">published on <time datetime="2024-12-26">2024-12-26</time></span>&nbsp;<span class="post-category">included in <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/java/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Java</a>&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Advanced Concepts</a></span></div><div class="content"><h1 id="deep-dive-into-java-memory-management">Deep Dive into Java Memory Management</h1>
+<p>Java Memory Management is a crucial part of developing efficient Java applications. It includes how memory is allocated, used, and automatically freed through <strong>Garbage Collection</strong>.</p>
 <hr>
-<h2 id="các-vùng-bộ-nhớ-trong-java">Các vùng bộ nhớ trong Java</h2>
-<p>Java Virtual Machine (JVM) quản lý bộ nhớ theo các vùng chính:</p>
+<h2 id="memory-regions-in-java">Memory Regions in Java</h2>
+<p>The Java Virtual Machine (JVM) manages memory according to the following main regions:</p>
 <h3 id="1-heap">1. <strong>Heap</strong></h3>
 <ul>
-<li><strong>Mô tả</strong>: Dùng để lưu trữ các đối tượng và biến toàn cục.</li>
-<li><strong>Quản lý</strong>: Heap được chia thành hai vùng chính:
+<li><strong>Description</strong>: Used to store objects and global variables.</li>
+<li><strong>Management</strong>: Heap is divided into two main regions:
 <ul>
-<li><strong>Young Generation</strong>: Chứa các đối tượng mới tạo. Bao gồm:
+<li><strong>Young Generation</strong>: Contains newly created objects. Includes:
 <ul>
-<li><strong>Eden Space</strong>: Nơi khởi tạo đối tượng mới.</li>
-<li><strong>Survivor Spaces</strong>: Lưu trữ các đối tượng sống sót sau mỗi chu kỳ GC.</li>
+<li><strong>Eden Space</strong>: Where new objects are initialized.</li>
+<li><strong>Survivor Spaces</strong>: Stores objects that survive each GC cycle.</li>
 </ul>
 </li>
-<li><strong>Old Generation</strong>: Chứa các đối tượng tồn tại lâu dài.</li>
+<li><strong>Old Generation</strong>: Contains long-lived objects.</li>
 </ul>
 </li>
 </ul>
 <h3 id="2-stack">2. <strong>Stack</strong></h3>
 <ul>
-<li><strong>Mô tả</strong>: Lưu trữ các biến cục bộ và khung ngăn xếp (stack frames) của từng luồng.</li>
-<li><strong>Đặc điểm</strong>: Dữ liệu trong Stack có vòng đời ngắn và được quản lý tự động theo LIFO (Last In, First Out).</li>
+<li><strong>Description</strong>: Stores local variables and stack frames of each thread.</li>
+<li><strong>Characteristics</strong>: Data in Stack has a short lifespan and is automatically managed according to LIFO (Last In, First Out).</li>
 </ul>
 <h3 id="3-metaspace">3. <strong>Metaspace</strong></h3>
 <ul>
-<li><strong>Mô tả</strong>: Lưu trữ thông tin về các lớp (class metadata).</li>
-<li><strong>Điểm khác biệt</strong>: Thay thế PermGen từ Java 8, với khả năng mở rộng động.</li>
+<li><strong>Description</strong>: Stores information about classes (class metadata).</li>
+<li><strong>Difference</strong>: Replaces PermGen from Java 8, with dynamic expansion capability.</li>
 </ul>
 <hr>
 <h2 id="garbage-collection-gc">Garbage Collection (GC)</h2>
-<p>Garbage Collection tự động giải phóng bộ nhớ không còn được tham chiếu, giúp giảm nguy cơ rò rỉ bộ nhớ (memory leaks).</p></div><div class="post-footer">
+<p>Garbage Collection automatically frees memory that is no longer referenced, helping reduce the risk of memory leaks.</p></div><div class="post-footer">
         <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/java/">Java</a>,&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/memory-management/">Memory Management</a>,&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/garbage-collection/">Garbage Collection</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
@@ -203,5 +220,5 @@
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/typeit/index.umd.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"data":{"id-1":"Đây là Blog cá nhân của tôi"},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/js/theme.min.js"></script></body>
+        </div><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/typeit/index.umd.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"data":{"id-1":"This is my personal blog"},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/js/theme.min.js"></script></body>
 </html>

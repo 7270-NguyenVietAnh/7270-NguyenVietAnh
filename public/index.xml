@@ -6,154 +6,182 @@
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</lastBuildDate>
             <atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Java Cơ Bản</title>
+    <title>Java Basics</title>
     <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-basic/</link>
     <pubDate>Thu, 26 Dec 2024 12:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
     <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-basic/</guid>
-    <description><![CDATA[<h1 id="giới-thiệu-về-java">Giới thiệu về Java</h1>
-<p>Java là một ngôn ngữ lập trình hướng đối tượng, được phát triển bởi Sun Microsystems vào năm 1995. Java là một trong những ngôn ngữ phổ biến nhất trên thế giới nhờ tính đơn giản, tính di động, và khả năng mở rộng.</p>
-<h2 id="đặc-điểm-của-java">Đặc điểm của Java</h2>
+    <description><![CDATA[<h1 id="introduction-to-java">Introduction to Java</h1>
+<p>Java is an object-oriented programming language developed by Sun Microsystems in 1995. Java is one of the most popular programming languages in the world due to its simplicity, portability, and scalability.</p>
+<h2 id="java-features">Java Features</h2>
 <ol>
-<li><strong>Hướng đối tượng</strong>: Java hỗ trợ đầy đủ các khái niệm hướng đối tượng như kế thừa, đóng gói, đa hình và trừu tượng.</li>
-<li><strong>Độc lập nền tảng</strong>: Java sử dụng Java Virtual Machine (JVM) để chạy mã, do đó bạn chỉ cần viết mã một lần và có thể chạy trên nhiều nền tảng khác nhau.</li>
-<li><strong>Bảo mật</strong>: Java được thiết kế với các cơ chế bảo mật tích hợp, giúp bảo vệ ứng dụng khỏi các cuộc tấn công.</li>
-<li><strong>Hiệu năng cao</strong>: Mặc dù Java không nhanh như C++, JVM và các tối ưu hóa của Java đã giúp cải thiện hiệu suất đáng kể.</li>
-<li><strong>Thư viện phong phú</strong>: Java cung cấp rất nhiều thư viện và API hỗ trợ cho việc phát triển ứng dụng từ đơn giản đến phức tạp.</li>
+<li><strong>Object-Oriented</strong>: Java fully supports object-oriented concepts such as inheritance, encapsulation, polymorphism, and abstraction.</li>
+<li><strong>Platform Independent</strong>: Java uses the Java Virtual Machine (JVM) to run code, so you only need to write the code once and can run it on multiple different platforms.</li>
+<li><strong>Security</strong>: Java is designed with built-in security mechanisms to protect applications from attacks.</li>
+<li><strong>High Performance</strong>: Although Java is not as fast as C++, the JVM and Java optimizations have significantly improved performance.</li>
+<li><strong>Rich Libraries</strong>: Java provides a wide range of libraries and APIs to support application development from simple to complex.</li>
 </ol>
-<h2 id="cấu-trúc-cơ-bản-của-một-chương-trình-java">Cấu trúc cơ bản của một chương trình Java</h2>
-<p>Dưới đây là ví dụ về một chương trình Java đơn giản:</p>]]></description>
+<h2 id="basic-structure-of-a-java-program">Basic Structure of a Java Program</h2>
+<p>Below is an example of a simple Java program:</p>]]></description>
 </item>
 <item>
-    <title>JavaScript Cơ Bản</title>
+    <title>JavaScript Basics</title>
     <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-basic/</link>
     <pubDate>Thu, 26 Dec 2024 13:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
     <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-basic/</guid>
-    <description><![CDATA[<h1 id="giới-thiệu-về-javascript">Giới thiệu về JavaScript</h1>
-<p>JavaScript là một ngôn ngữ lập trình kịch bản phổ biến, chủ yếu được sử dụng để tạo các trang web động và tương tác. JavaScript được phát triển lần đầu tiên bởi Netscape vào năm 1995 và hiện nay là một trong những ngôn ngữ quan trọng nhất trong phát triển web.</p>
-<h2 id="đặc-điểm-của-javascript">Đặc điểm của JavaScript</h2>
+    <description><![CDATA[<h1 id="introduction-to-javascript">Introduction to JavaScript</h1>
+<p>JavaScript is a popular scripting language, primarily used to create dynamic and interactive web pages. JavaScript was first developed by Netscape in 1995 and is now one of the most important languages in web development.</p>
+<h2 id="features-of-javascript">Features of JavaScript</h2>
 <ol>
-<li><strong>Lập trình hướng đối tượng</strong>: JavaScript hỗ trợ lập trình hướng đối tượng, cho phép bạn tạo ra các đối tượng và kế thừa.</li>
-<li><strong>Chạy trên mọi trình duyệt</strong>: JavaScript có thể chạy trên tất cả các trình duyệt web hiện đại mà không cần cài đặt phần mềm bổ sung.</li>
-<li><strong>Tính linh hoạt cao</strong>: JavaScript có thể được sử dụng cho cả lập trình phía client (trình duyệt) và phía server (với Node.js).</li>
-<li><strong>Cộng đồng lớn và thư viện phong phú</strong>: JavaScript có một cộng đồng phát triển rộng lớn và rất nhiều thư viện mã nguồn mở như React, Angular, Vue.js giúp phát triển ứng dụng nhanh chóng và hiệu quả.</li>
+<li><strong>Object-Oriented Programming</strong>: JavaScript supports object-oriented programming, allowing you to create objects and inheritance.</li>
+<li><strong>Runs on All Browsers</strong>: JavaScript can run on all modern web browsers without requiring additional software installation.</li>
+<li><strong>High Flexibility</strong>: JavaScript can be used for both client-side (browser) and server-side programming (with Node.js).</li>
+<li><strong>Large Community and Rich Libraries</strong>: JavaScript has a large development community and many open-source libraries like React, Angular, Vue.js that help develop applications quickly and efficiently.</li>
 </ol>
-<h2 id="cấu-trúc-cơ-bản-của-một-chương-trình-javascript">Cấu trúc cơ bản của một chương trình JavaScript</h2>
-<p>Dưới đây là ví dụ về một chương trình JavaScript đơn giản:</p>]]></description>
+<h2 id="basic-structure-of-a-javascript-program">Basic Structure of a JavaScript Program</h2>
+<p>Below is an example of a simple JavaScript program:</p>]]></description>
 </item>
 <item>
-    <title>Lập trình Java Hướng Đối Tượng</title>
+    <title>Java Object-Oriented Programming</title>
     <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-oop/</link>
     <pubDate>Thu, 26 Dec 2024 14:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
     <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-oop/</guid>
-    <description><![CDATA[<h1 id="giới-thiệu-về-lập-trình-hướng-đối-tượng-trong-java">Giới thiệu về Lập Trình Hướng Đối Tượng trong Java</h1>
-<p>Lập trình hướng đối tượng (OOP) là một phương pháp lập trình mạnh mẽ giúp tổ chức và xử lý dữ liệu trong các chương trình phức tạp. Java, với tính năng hỗ trợ đầy đủ OOP, là một trong những ngôn ngữ phổ biến nhất được sử dụng để phát triển ứng dụng lớn và mạnh mẽ.</p>
-<h2 id="các-khái-niệm-chính-trong-lập-trình-hướng-đối-tượng">Các Khái Niệm Chính trong Lập Trình Hướng Đối Tượng</h2>
-<p>Lập trình hướng đối tượng bao gồm bốn nguyên lý cơ bản:</p>]]></description>
+    <description><![CDATA[<h1 id="introduction-to-object-oriented-programming-in-java">Introduction to Object-Oriented Programming in Java</h1>
+<p>Object-Oriented Programming (OOP) is a powerful programming paradigm that helps organize and process data in complex programs. Java, with its full support for OOP features, is one of the most popular languages used to develop large and powerful applications.</p>
+<h2 id="key-concepts-in-object-oriented-programming">Key Concepts in Object-Oriented Programming</h2>
+<p>Object-Oriented Programming includes four fundamental principles:</p>
+<ol>
+<li><strong>Encapsulation</strong>: Data and methods are encapsulated into objects. This helps protect data and control access to it.</li>
+<li><strong>Abstraction</strong>: Only display necessary details and hide unnecessary details, helping reduce system complexity.</li>
+<li><strong>Inheritance</strong>: Allows creating subclasses that inherit attributes and methods from a parent class, helping reuse source code.</li>
+<li><strong>Polymorphism</strong>: Allows using a method in different ways of execution, depending on the object calling it.</li>
+</ol>
+<h2 id="structure-of-a-class-in-java">Structure of a Class in Java</h2>
+<p>A class in Java can contain fields (variables) and methods. Below is an example of a simple class in Java:</p>]]></description>
 </item>
 <item>
-    <title>Hiểu sâu về Closures trong JavaScript</title>
+    <title>Deep Understanding of Closures in JavaScript</title>
     <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/</link>
     <pubDate>Thu, 26 Dec 2024 15:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
     <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/</guid>
-    <description><![CDATA[<h1 id="hiểu-sâu-về-closures-trong-javascript">Hiểu sâu về Closures trong JavaScript</h1>
-<p><strong>Closures</strong> là một trong những khái niệm mạnh mẽ và thường gây nhầm lẫn trong JavaScript. Chúng ta sẽ tìm hiểu closures là gì, cách chúng hoạt động, và tại sao chúng rất quan trọng trong lập trình JavaScript.</p>
+    <description><![CDATA[<h1 id="deep-understanding-of-closures-in-javascript">Deep Understanding of Closures in JavaScript</h1>
+<p><strong>Closures</strong> is one of the powerful and often confusing concepts in JavaScript. We will explore what closures are, how they work, and why they are very important in JavaScript programming.</p>
 <hr>
-<h2 id="closures-là-gì">Closures là gì?</h2>
-<p>Closures xảy ra khi một hàm &ldquo;nhớ&rdquo; được phạm vi (scope) nơi nó được tạo ra, ngay cả khi hàm đó được gọi bên ngoài phạm vi đó.</p>]]></description>
+<h2 id="what-are-closures">What are Closures?</h2>
+<p>Closures occur when a function &ldquo;remembers&rdquo; the scope (scope) where it was created, even when that function is called outside of that scope.</p>
+<h3 id="definition">Definition:</h3>
+<blockquote>
+<p><strong>Closure</strong> is a combination of a function and the lexical environment in which the function is defined.</p>]]></description>
 </item>
 <item>
-    <title>Hiểu sâu về Java Stream API</title>
+    <title>Deep Understanding of Java Stream API</title>
     <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/</link>
     <pubDate>Thu, 26 Dec 2024 16:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
     <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/</guid>
-    <description><![CDATA[<h1 id="hiểu-sâu-về-java-stream-api">Hiểu sâu về Java Stream API</h1>
-<p><strong>Java Stream API</strong> là một tính năng mạnh mẽ được giới thiệu từ Java 8, giúp xử lý các bộ sưu tập dữ liệu (collections) dễ dàng, hiệu quả và ngắn gọn hơn. Stream API giúp lập trình viên tập trung vào <strong>cái cần làm</strong> (what to do) thay vì <strong>cách làm</strong> (how to do).</p>
+    <description><![CDATA[<h1 id="deep-understanding-of-java-stream-api">Deep Understanding of Java Stream API</h1>
+<p><strong>Java Stream API</strong> is a powerful feature introduced from Java 8, helping to process collections of data easily, efficiently, and more concisely. Stream API helps programmers focus on <strong>what to do</strong> rather than <strong>how to do it</strong>.</p>
 <hr>
-<h2 id="stream-api-là-gì">Stream API là gì?</h2>
-<h3 id="định-nghĩa">Định nghĩa:</h3>
+<h2 id="what-is-stream-api">What is Stream API?</h2>
+<h3 id="definition">Definition:</h3>
 <blockquote>
-<p><strong>Stream API</strong> là một công cụ hỗ trợ xử lý dữ liệu theo cách khai báo (declarative) bằng cách cung cấp các thao tác như lọc, sắp xếp và chuyển đổi trên các bộ dữ liệu.</p>]]></description>
+<p><strong>Stream API</strong> is a tool that supports data processing in a declarative way by providing operations such as filtering, sorting, and transformation on data sets.</p>]]></description>
 </item>
 <item>
-    <title>Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</title>
+    <title>Deep Dive into Asynchronous Programming in JavaScript</title>
     <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-async/</link>
     <pubDate>Thu, 26 Dec 2024 17:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
     <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-async/</guid>
-    <description><![CDATA[<h1 id="chuyên-sâu-về-lập-trình-bất-đồng-bộ-trong-javascript">Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</h1>
-<p>Lập trình bất đồng bộ là một phần quan trọng của JavaScript, đặc biệt trong việc xử lý các tác vụ như gọi API, đọc/ghi file, hoặc giao tiếp với cơ sở dữ liệu. Hiểu rõ cách thức hoạt động của bất đồng bộ sẽ giúp bạn viết mã hiệu quả và tránh các lỗi khó xử lý.</p>
+    <description><![CDATA[<h1 id="deep-dive-into-asynchronous-programming-in-javascript">Deep Dive into Asynchronous Programming in JavaScript</h1>
+<p>Asynchronous programming is an important part of JavaScript, especially when handling tasks like making API calls, reading/writing files, or communicating with databases. Understanding how asynchronous programming works will help you write efficient code and avoid difficult-to-handle errors.</p>
 <hr>
-<h2 id="lập-trình-bất-đồng-bộ-là-gì">Lập trình bất đồng bộ là gì?</h2>
-<p>Lập trình bất đồng bộ cho phép các tác vụ mất thời gian được thực thi mà không chặn luồng chính (main thread). Điều này giúp giao diện người dùng vẫn mượt mà trong khi các tác vụ nền đang chạy.</p>]]></description>
+<h2 id="what-is-asynchronous-programming">What is Asynchronous Programming?</h2>
+<p>Asynchronous programming allows time-consuming tasks to be executed without blocking the main thread. This keeps the user interface smooth while background tasks are running.</p>]]></description>
 </item>
 <item>
-    <title>Chuyên sâu về Event Loop trong JavaScript</title>
+    <title>Deep Dive into Event Loop in JavaScript</title>
     <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/</link>
     <pubDate>Thu, 26 Dec 2024 18:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
     <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-loop/</guid>
-    <description><![CDATA[<h1 id="chuyên-sâu-về-event-loop-trong-javascript">Chuyên sâu về Event Loop trong JavaScript</h1>
-<p>Event Loop là trái tim của JavaScript, giúp quản lý và điều phối các tác vụ bất đồng bộ. Hiểu rõ về Event Loop là chìa khóa để giải thích tại sao một số đoạn mã JavaScript lại hoạt động như vậy.</p>
+    <description><![CDATA[<h1 id="deep-dive-into-event-loop-in-javascript">Deep Dive into Event Loop in JavaScript</h1>
+<p>Event Loop is the heart of JavaScript, helping manage and coordinate asynchronous tasks. Understanding Event Loop is key to explaining why some JavaScript code behaves the way it does.</p>
 <hr>
-<h2 id="event-loop-là-gì">Event Loop là gì?</h2>
-<p>JavaScript là một ngôn ngữ đơn luồng (<strong>single-threaded</strong>), nhưng nó có thể xử lý nhiều tác vụ bất đồng bộ nhờ cơ chế Event Loop. Event Loop chịu trách nhiệm:</p>]]></description>
+<h2 id="what-is-event-loop">What is Event Loop?</h2>
+<p>JavaScript is a <strong>single-threaded</strong> language, but it can handle multiple asynchronous tasks thanks to the Event Loop mechanism. Event Loop is responsible for:</p>
+<ul>
+<li>Listening to events from the queue.</li>
+<li>Managing the main thread (call stack).</li>
+<li>Ensuring asynchronous tasks execute in the correct order.</li>
+</ul>
+<hr>
+<h2 id="main-components">Main Components</h2>
+<ol>
+<li><strong>Call Stack</strong>: Where JavaScript instructions are executed sequentially.</li>
+<li><strong>Web APIs</strong>: Provides the environment to run asynchronous tasks like <code>setTimeout</code>, <code>fetch</code>, or DOM events.</li>
+<li><strong>Callback Queue</strong>: Queue where callbacks wait to be executed after the call stack is empty.</li>
+<li><strong>Event Loop</strong>: Monitors the call stack and callback queue to decide when to move a function from queue to stack.</li>
+</ol>
+<hr>
+<h2 id="how-event-loop-works">How Event Loop Works</h2>
+<h3 id="1-synchronous">1. Synchronous:</h3>
+<p>Instructions are executed directly in the <strong>call stack</strong>.</p>]]></description>
 </item>
 <item>
-    <title>Chuyên sâu về Java Networking</title>
+    <title>Deep Dive into Java Networking</title>
     <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/</link>
     <pubDate>Thu, 26 Dec 2024 19:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
     <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-networking/</guid>
-    <description><![CDATA[<h1 id="chuyên-sâu-về-java-networking">Chuyên sâu về Java Networking</h1>
-<p>Java cung cấp một API mạnh mẽ để lập trình mạng, giúp các ứng dụng Java giao tiếp qua mạng dễ dàng. Từ việc thiết lập kết nối TCP/IP đến việc gửi và nhận dữ liệu, Java Networking hỗ trợ cả client và server.</p>
+    <description><![CDATA[<h1 id="deep-dive-into-java-networking">Deep Dive into Java Networking</h1>
+<p>Java provides a powerful API for network programming, allowing Java applications to communicate over networks easily. From establishing TCP/IP connections to sending and receiving data, Java Networking supports both client and server.</p>
 <hr>
-<h2 id="java-networking-là-gì">Java Networking là gì?</h2>
-<p>Java Networking bao gồm các lớp và giao thức hỗ trợ lập trình mạng như TCP, UDP, và HTTP. API này nằm trong gói <code>java.net</code>, cung cấp các lớp như <code>Socket</code>, <code>ServerSocket</code>, <code>InetAddress</code>, và nhiều hơn nữa.</p>]]></description>
+<h2 id="what-is-java-networking">What is Java Networking?</h2>
+<p>Java Networking includes classes and protocols that support network programming such as TCP, UDP, and HTTP. This API is located in the <code>java.net</code> package, providing classes such as <code>Socket</code>, <code>ServerSocket</code>, <code>InetAddress</code>, and more.</p>]]></description>
 </item>
 <item>
-    <title>Chuyên sâu về Java Memory Management</title>
+    <title>Deep Dive into Java Memory Management</title>
     <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/</link>
     <pubDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</pubDate>
     <author>ChatGPT</author>
     <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-memory-management/</guid>
-    <description><![CDATA[<h1 id="chuyên-sâu-về-java-memory-management">Chuyên sâu về Java Memory Management</h1>
-<p>Java Memory Management (quản lý bộ nhớ) là một phần quan trọng trong việc phát triển ứng dụng Java hiệu quả. Nó bao gồm cách bộ nhớ được phân bổ, sử dụng, và giải phóng tự động thông qua <strong>Garbage Collection</strong>.</p>
+    <description><![CDATA[<h1 id="deep-dive-into-java-memory-management">Deep Dive into Java Memory Management</h1>
+<p>Java Memory Management is a crucial part of developing efficient Java applications. It includes how memory is allocated, used, and automatically freed through <strong>Garbage Collection</strong>.</p>
 <hr>
-<h2 id="các-vùng-bộ-nhớ-trong-java">Các vùng bộ nhớ trong Java</h2>
-<p>Java Virtual Machine (JVM) quản lý bộ nhớ theo các vùng chính:</p>
+<h2 id="memory-regions-in-java">Memory Regions in Java</h2>
+<p>The Java Virtual Machine (JVM) manages memory according to the following main regions:</p>
 <h3 id="1-heap">1. <strong>Heap</strong></h3>
 <ul>
-<li><strong>Mô tả</strong>: Dùng để lưu trữ các đối tượng và biến toàn cục.</li>
-<li><strong>Quản lý</strong>: Heap được chia thành hai vùng chính:
+<li><strong>Description</strong>: Used to store objects and global variables.</li>
+<li><strong>Management</strong>: Heap is divided into two main regions:
 <ul>
-<li><strong>Young Generation</strong>: Chứa các đối tượng mới tạo. Bao gồm:
+<li><strong>Young Generation</strong>: Contains newly created objects. Includes:
 <ul>
-<li><strong>Eden Space</strong>: Nơi khởi tạo đối tượng mới.</li>
-<li><strong>Survivor Spaces</strong>: Lưu trữ các đối tượng sống sót sau mỗi chu kỳ GC.</li>
+<li><strong>Eden Space</strong>: Where new objects are initialized.</li>
+<li><strong>Survivor Spaces</strong>: Stores objects that survive each GC cycle.</li>
 </ul>
 </li>
-<li><strong>Old Generation</strong>: Chứa các đối tượng tồn tại lâu dài.</li>
+<li><strong>Old Generation</strong>: Contains long-lived objects.</li>
 </ul>
 </li>
 </ul>
 <h3 id="2-stack">2. <strong>Stack</strong></h3>
 <ul>
-<li><strong>Mô tả</strong>: Lưu trữ các biến cục bộ và khung ngăn xếp (stack frames) của từng luồng.</li>
-<li><strong>Đặc điểm</strong>: Dữ liệu trong Stack có vòng đời ngắn và được quản lý tự động theo LIFO (Last In, First Out).</li>
+<li><strong>Description</strong>: Stores local variables and stack frames of each thread.</li>
+<li><strong>Characteristics</strong>: Data in Stack has a short lifespan and is automatically managed according to LIFO (Last In, First Out).</li>
 </ul>
 <h3 id="3-metaspace">3. <strong>Metaspace</strong></h3>
 <ul>
-<li><strong>Mô tả</strong>: Lưu trữ thông tin về các lớp (class metadata).</li>
-<li><strong>Điểm khác biệt</strong>: Thay thế PermGen từ Java 8, với khả năng mở rộng động.</li>
+<li><strong>Description</strong>: Stores information about classes (class metadata).</li>
+<li><strong>Difference</strong>: Replaces PermGen from Java 8, with dynamic expansion capability.</li>
 </ul>
 <hr>
 <h2 id="garbage-collection-gc">Garbage Collection (GC)</h2>
-<p>Garbage Collection tự động giải phóng bộ nhớ không còn được tham chiếu, giúp giảm nguy cơ rò rỉ bộ nhớ (memory leaks).</p>]]></description>
+<p>Garbage Collection automatically frees memory that is no longer referenced, helping reduce the risk of memory leaks.</p>]]></description>
 </item>
 </channel>
 </rss>

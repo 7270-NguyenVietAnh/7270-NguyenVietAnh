@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Hiểu sâu về Java Stream API - Nguyễn Việt Anh Blog</title><meta name="Description" content="Tìm hiểu chuyên sâu về Stream API trong Java 8, một tính năng mạnh mẽ giúp xử lý dữ liệu hiệu quả và ngắn gọn hơn."><meta property="og:url" content="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/">
+        <title>Deep Understanding of Java Stream API - Nguyễn Việt Anh Blog</title><meta name="Description" content="In-depth understanding of Stream API in Java 8, a powerful feature that helps process data more efficiently and concisely."><meta property="og:url" content="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/">
   <meta property="og:site_name" content="Nguyễn Việt Anh Blog">
-  <meta property="og:title" content="Hiểu sâu về Java Stream API">
-  <meta property="og:description" content="Tìm hiểu chuyên sâu về Stream API trong Java 8, một tính năng mạnh mẽ giúp xử lý dữ liệu hiệu quả và ngắn gọn hơn.">
+  <meta property="og:title" content="Deep Understanding of Java Stream API">
+  <meta property="og:description" content="In-depth understanding of Stream API in Java 8, a powerful feature that helps process data more efficiently and concisely.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -20,8 +20,8 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/featured-image.png">
-  <meta name="twitter:title" content="Hiểu sâu về Java Stream API">
-  <meta name="twitter:description" content="Tìm hiểu chuyên sâu về Stream API trong Java 8, một tính năng mạnh mẽ giúp xử lý dữ liệu hiệu quả và ngắn gọn hơn.">
+  <meta name="twitter:title" content="Deep Understanding of Java Stream API">
+  <meta name="twitter:description" content="In-depth understanding of Stream API in Java 8, a powerful feature that helps process data more efficiently and concisely.">
 <meta name="application-name" content="My KeepIt site">
 <meta name="apple-mobile-web-app-title" content="My KeepIt site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +29,7 @@
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Hiểu sâu về Java Stream API",
+        "headline": "Deep Understanding of Java Stream API",
         "inLanguage": "en-us",
         "mainEntityOfPage": {
             "@type": "WebPage",
@@ -39,13 +39,13 @@
                             "url": "http:\/\/localhost:1313\/7270-NguyenVietAnh\/7270-NguyenVietAnh\/posts\/java-stream-api\/featured-image.png",
                             "width":  310 ,
                             "height":  163 
-                        }],"genre": "posts","keywords": "Java, Stream API, Java 8","wordcount":  786 ,
+                        }],"genre": "posts","keywords": "Java, Stream API, Java 8","wordcount":  622 ,
         "url": "http:\/\/localhost:1313\/7270-NguyenVietAnh\/7270-NguyenVietAnh\/posts\/java-stream-api\/","datePublished": "2024-12-26T16:00:00+08:00","dateModified": "2024-12-26T16:00:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
                 "name": "ChatGPT"
-            },"description": "Tìm hiểu chuyên sâu về Stream API trong Java 8, một tính năng mạnh mẽ giúp xử lý dữ liệu hiệu quả và ngắn gọn hơn."
+            },"description": "In-depth understanding of Stream API in Java 8, a powerful feature that helps process data more efficiently and concisely."
     }
     </script></head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -53,7 +53,7 @@
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Trang chủ</a>
+            <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Home</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/aboutme/"> About Me </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/"> Posts </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/"> Tags </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
@@ -77,7 +77,7 @@
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Trang chủ</a>
+                <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Home</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -112,11 +112,11 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Hiểu sâu về Java Stream API</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Deep Understanding of Java Stream API</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://chatgpt.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ChatGPT</a>
 </span>&nbsp;<span class="post-category">included in <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/java/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Java</a>&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Advanced Concepts</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-12-26">2024-12-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;786 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-12-26">2024-12-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;622 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/7270-NguyenVietAnh/7270-NguyenVietAnh/svg/loading.min.svg"
@@ -124,81 +124,81 @@
         data-srcset="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/featured-image.png, /7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/featured-image.png 1.5x, /7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/featured-image.png 2x"
         data-sizes="auto"
         alt="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/featured-image.png"
-        title="Tìm hiểu chuyên sâu về Stream API trong Java 8, một tính năng mạnh mẽ giúp xử lý dữ liệu hiệu quả và ngắn gọn hơn." /></div><div class="details toc" id="toc-static"  data-kept="">
+        title="In-depth understanding of Stream API in Java 8, a powerful feature that helps process data more efficiently and concisely." /></div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#stream-api-là-gì">Stream API là gì?</a>
+    <li><a href="#what-is-stream-api">What is Stream API?</a>
       <ul>
-        <li><a href="#định-nghĩa">Định nghĩa:</a></li>
+        <li><a href="#definition">Definition:</a></li>
       </ul>
     </li>
-    <li><a href="#đặc-điểm-của-stream">Đặc điểm của Stream</a></li>
-    <li><a href="#các-thao-tác-trên-stream">Các thao tác trên Stream</a>
+    <li><a href="#characteristics-of-stream">Characteristics of Stream</a></li>
+    <li><a href="#stream-operations">Stream Operations</a>
       <ul>
-        <li><a href="#1-tạo-stream-stream-creation">1. <strong>Tạo Stream (Stream Creation)</strong></a></li>
-        <li><a href="#2-thao-tác-trung-gian-intermediate-operations">2. <strong>Thao tác trung gian (Intermediate Operations)</strong></a></li>
-        <li><a href="#3-thao-tác-kết-thúc-terminal-operations">3. <strong>Thao tác kết thúc (Terminal Operations)</strong></a></li>
+        <li><a href="#1-stream-creation">1. <strong>Stream Creation</strong></a></li>
+        <li><a href="#2-intermediate-operations">2. <strong>Intermediate Operations</strong></a></li>
+        <li><a href="#3-terminal-operations">3. <strong>Terminal Operations</strong></a></li>
       </ul>
     </li>
-    <li><a href="#ứng-dụng-thực-tế-của-stream-api">Ứng dụng thực tế của Stream API</a></li>
-    <li><a href="#kết-luận">Kết luận</a></li>
+    <li><a href="#real-world-applications-of-stream-api">Real-World Applications of Stream API</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h1 id="hiểu-sâu-về-java-stream-api">Hiểu sâu về Java Stream API</h1>
-<p><strong>Java Stream API</strong> là một tính năng mạnh mẽ được giới thiệu từ Java 8, giúp xử lý các bộ sưu tập dữ liệu (collections) dễ dàng, hiệu quả và ngắn gọn hơn. Stream API giúp lập trình viên tập trung vào <strong>cái cần làm</strong> (what to do) thay vì <strong>cách làm</strong> (how to do).</p>
+            </div><div class="content" id="content"><h1 id="deep-understanding-of-java-stream-api">Deep Understanding of Java Stream API</h1>
+<p><strong>Java Stream API</strong> is a powerful feature introduced from Java 8, helping to process collections of data easily, efficiently, and more concisely. Stream API helps programmers focus on <strong>what to do</strong> rather than <strong>how to do it</strong>.</p>
 <hr>
-<h2 id="stream-api-là-gì">Stream API là gì?</h2>
-<h3 id="định-nghĩa">Định nghĩa:</h3>
+<h2 id="what-is-stream-api">What is Stream API?</h2>
+<h3 id="definition">Definition:</h3>
 <blockquote>
-<p><strong>Stream API</strong> là một công cụ hỗ trợ xử lý dữ liệu theo cách khai báo (declarative) bằng cách cung cấp các thao tác như lọc, sắp xếp và chuyển đổi trên các bộ dữ liệu.</p></blockquote>
+<p><strong>Stream API</strong> is a tool that supports data processing in a declarative way by providing operations such as filtering, sorting, and transformation on data sets.</p></blockquote>
 <hr>
-<h2 id="đặc-điểm-của-stream">Đặc điểm của Stream</h2>
+<h2 id="characteristics-of-stream">Characteristics of Stream</h2>
 <ul>
-<li><strong>Không lưu trữ (No Storage)</strong>: Stream không lưu trữ dữ liệu; chúng hoạt động trên các nguồn dữ liệu (collections, arrays).</li>
-<li><strong>Bất biến (Immutable)</strong>: Mỗi thao tác trên Stream trả về một Stream mới mà không thay đổi Stream ban đầu.</li>
-<li><strong>Lười biếng (Lazy Evaluation)</strong>: Các thao tác chỉ được thực thi khi cần thiết (khi có thao tác terminal).</li>
-<li><strong>Song song hóa dễ dàng (Parallelizable)</strong>: Stream hỗ trợ xử lý dữ liệu song song, tối ưu hóa hiệu suất.</li>
+<li><strong>No Storage</strong>: Stream does not store data; they operate on data sources (collections, arrays).</li>
+<li><strong>Immutable</strong>: Each operation on Stream returns a new Stream without changing the original Stream.</li>
+<li><strong>Lazy Evaluation</strong>: Operations are only executed when necessary (when there is a terminal operation).</li>
+<li><strong>Parallelizable</strong>: Stream supports parallel data processing, optimizing performance.</li>
 </ul>
 <hr>
-<h2 id="các-thao-tác-trên-stream">Các thao tác trên Stream</h2>
-<p>Stream API cung cấp 3 loại thao tác chính:</p>
-<h3 id="1-tạo-stream-stream-creation">1. <strong>Tạo Stream (Stream Creation)</strong></h3>
-<p>Stream có thể được tạo từ nhiều nguồn như collections, arrays, hoặc files.</p>
+<h2 id="stream-operations">Stream Operations</h2>
+<p>Stream API provides 3 main types of operations:</p>
+<h3 id="1-stream-creation">1. <strong>Stream Creation</strong></h3>
+<p>Stream can be created from many sources such as collections, arrays, or files.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.*;
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.stream.*;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StreamCreationExample</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Tạo Stream từ một danh sách</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Create Stream from a list</span>
 </span></span><span style="display:flex;"><span>        List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> names <span style="color:#f92672">=</span> Arrays.<span style="color:#a6e22e">asList</span>(<span style="color:#e6db74">&#34;Alice&#34;</span>, <span style="color:#e6db74">&#34;Bob&#34;</span>, <span style="color:#e6db74">&#34;Charlie&#34;</span>);
 </span></span><span style="display:flex;"><span>        Stream<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> streamFromList <span style="color:#f92672">=</span> names.<span style="color:#a6e22e">stream</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Tạo Stream từ một mảng</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Create Stream from an array</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> numbers <span style="color:#f92672">=</span> {1, 2, 3, 4};
 </span></span><span style="display:flex;"><span>        IntStream streamFromArray <span style="color:#f92672">=</span> Arrays.<span style="color:#a6e22e">stream</span>(numbers);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Tạo Stream từ một chuỗi</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Create Stream from a string</span>
 </span></span><span style="display:flex;"><span>        Stream<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> streamFromString <span style="color:#f92672">=</span> Stream.<span style="color:#a6e22e">of</span>(<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;C&#34;</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Tạo Stream vô hạn</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Create infinite Stream</span>
 </span></span><span style="display:flex;"><span>        Stream<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> infiniteStream <span style="color:#f92672">=</span> Stream.<span style="color:#a6e22e">iterate</span>(0, n <span style="color:#f92672">-&gt;</span> n <span style="color:#f92672">+</span> 2);
 </span></span><span style="display:flex;"><span>        infiniteStream.<span style="color:#a6e22e">limit</span>(5).<span style="color:#a6e22e">forEach</span>(System.<span style="color:#a6e22e">out</span>::println); <span style="color:#75715e">// Output: 0, 2, 4, 6, 8</span>
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><hr>
-<h3 id="2-thao-tác-trung-gian-intermediate-operations">2. <strong>Thao tác trung gian (Intermediate Operations)</strong></h3>
-<p>Thao tác trung gian thực hiện biến đổi dữ liệu và trả về một Stream mới. Chúng không thực thi ngay mà đợi đến khi có thao tác kết thúc.</p>
+<h3 id="2-intermediate-operations">2. <strong>Intermediate Operations</strong></h3>
+<p>Intermediate operations perform data transformation and return a new Stream. They do not execute immediately but wait until there is a terminal operation.</p>
 <ul>
-<li><strong><code>filter</code></strong>: Lọc các phần tử thỏa mãn điều kiện.</li>
-<li><strong><code>map</code></strong>: Chuyển đổi các phần tử từ kiểu này sang kiểu khác.</li>
-<li><strong><code>sorted</code></strong>: Sắp xếp các phần tử theo thứ tự tự nhiên hoặc theo comparator.</li>
-<li><strong><code>distinct</code></strong>: Loại bỏ các phần tử trùng lặp.</li>
+<li><strong><code>filter</code></strong>: Filters elements that satisfy a condition.</li>
+<li><strong><code>map</code></strong>: Transforms elements from one type to another.</li>
+<li><strong><code>sorted</code></strong>: Sorts elements in natural order or by comparator.</li>
+<li><strong><code>distinct</code></strong>: Removes duplicate elements.</li>
 </ul>
-<p>Ví dụ:</p>
+<p>Example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.*;
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.stream.*;
 </span></span><span style="display:flex;"><span>
@@ -214,15 +214,15 @@
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><hr>
-<h3 id="3-thao-tác-kết-thúc-terminal-operations">3. <strong>Thao tác kết thúc (Terminal Operations)</strong></h3>
-<p>Thao tác kết thúc thực thi chuỗi các thao tác trung gian và trả về kết quả cuối cùng.</p>
+<h3 id="3-terminal-operations">3. <strong>Terminal Operations</strong></h3>
+<p>Terminal operations execute a chain of intermediate operations and return the final result.</p>
 <ul>
-<li><strong><code>forEach</code></strong>: Duyệt qua từng phần tử và thực hiện một hành động.</li>
-<li><strong><code>collect</code></strong>: Thu thập kết quả thành một collection hoặc kiểu dữ liệu khác.</li>
-<li><strong><code>reduce</code></strong>: Gộp các phần tử lại thành một giá trị duy nhất.</li>
-<li><strong><code>count</code></strong>: Đếm số lượng phần tử.</li>
+<li><strong><code>forEach</code></strong>: Iterates through each element and performs an action.</li>
+<li><strong><code>collect</code></strong>: Collects results into a collection or other data type.</li>
+<li><strong><code>reduce</code></strong>: Combines elements into a single value.</li>
+<li><strong><code>count</code></strong>: Counts the number of elements.</li>
 </ul>
-<p>Ví dụ:</p>
+<p>Example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.*;
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.stream.*;
 </span></span><span style="display:flex;"><span>
@@ -243,13 +243,13 @@
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><hr>
-<h2 id="ứng-dụng-thực-tế-của-stream-api">Ứng dụng thực tế của Stream API</h2>
+<h2 id="real-world-applications-of-stream-api">Real-World Applications of Stream API</h2>
 <ol>
-<li><strong>Xử lý dữ liệu phức tạp</strong>: Stream API giúp viết mã dễ đọc hơn khi xử lý các bộ dữ liệu lớn hoặc phức tạp.</li>
-<li><strong>Cải thiện hiệu suất</strong>: Với khả năng xử lý song song, Stream API giảm thời gian xử lý dữ liệu lớn.</li>
-<li><strong>Dễ dàng bảo trì</strong>: Code sử dụng Stream API dễ dàng mở rộng và bảo trì nhờ cú pháp khai báo rõ ràng.</li>
+<li><strong>Complex Data Processing</strong>: Stream API helps write more readable code when processing large or complex data sets.</li>
+<li><strong>Improved Performance</strong>: With parallel processing capability, Stream API reduces data processing time for large data.</li>
+<li><strong>Easy Maintenance</strong>: Code using Stream API is easy to extend and maintain thanks to clear declarative syntax.</li>
 </ol>
-<p>Ví dụ ứng dụng:</p>
+<p>Example application:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.*;
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.stream.*;
 </span></span><span style="display:flex;"><span>
@@ -262,7 +262,7 @@
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">new</span> Employee(<span style="color:#e6db74">&#34;David&#34;</span>, 2000)
 </span></span><span style="display:flex;"><span>        );
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Lọc những nhân viên có lương trên 3000 và lấy tên của họ</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Filter employees with salary above 3000 and get their names</span>
 </span></span><span style="display:flex;"><span>        List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> highEarners <span style="color:#f92672">=</span> employees.<span style="color:#a6e22e">stream</span>()
 </span></span><span style="display:flex;"><span>            .<span style="color:#a6e22e">filter</span>(emp <span style="color:#f92672">-&gt;</span> emp.<span style="color:#a6e22e">getSalary</span>() <span style="color:#f92672">&gt;</span> 3000)
 </span></span><span style="display:flex;"><span>            .<span style="color:#a6e22e">map</span>(Employee::getName)
@@ -290,8 +290,8 @@
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><hr>
-<h2 id="kết-luận">Kết luận</h2>
-<p>Stream API là một công cụ mạnh mẽ giúp đơn giản hóa việc xử lý dữ liệu trong Java. Với cú pháp rõ ràng và khả năng xử lý song song, nó trở thành một phần không thể thiếu cho các lập trình viên Java hiện đại.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Stream API is a powerful tool that helps simplify data processing in Java. With clear syntax and parallel processing capability, it becomes an indispensable part for modern Java programmers.</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -301,7 +301,7 @@
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/" data-title="Hiểu sâu về Java Stream API" data-hashtags="Java,Stream API,Java 8"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/" data-hashtag="Java"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/" data-title="Hiểu sâu về Java Stream API"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/" data-title="Hiểu sâu về Java Stream API"><i data-svg-src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/" data-title="Hiểu sâu về Java Stream API"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/" data-title="Deep Understanding of Java Stream API" data-hashtags="Java,Stream API,Java 8"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/" data-hashtag="Java"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/" data-title="Deep Understanding of Java Stream API"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/" data-title="Deep Understanding of Java Stream API"><i data-svg-src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-stream-api/" data-title="Deep Understanding of Java Stream API"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -313,8 +313,8 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-async/" class="prev" rel="prev" title="Chuyên sâu về Lập trình bất đồng bộ trong JavaScript"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Chuyên sâu về Lập trình bất đồng bộ trong JavaScript</a>
-            <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/" class="next" rel="next" title="Hiểu sâu về Closures trong JavaScript">Hiểu sâu về Closures trong JavaScript<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-async/" class="prev" rel="prev" title="Deep Dive into Asynchronous Programming in JavaScript"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Deep Dive into Asynchronous Programming in JavaScript</a>
+            <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/javascript-closures/" class="next" rel="next" title="Deep Understanding of Closures in JavaScript">Deep Understanding of Closures in JavaScript<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
