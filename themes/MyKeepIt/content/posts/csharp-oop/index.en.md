@@ -12,8 +12,8 @@ resources:
 - name: "featured-image"
   src: "featured-image.png"
 
-tags: ["C#", "OOP", "Object-Oriented Programming"]
-categories: ["C#", "Advanced Concepts"]
+tags: ["CSharp", "OOP", "Object-Oriented Programming"]
+categories: ["CSharp", "Advanced Concepts"]
 
 lightgallery: true
 ---

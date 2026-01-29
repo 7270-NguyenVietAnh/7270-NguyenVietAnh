@@ -12,8 +12,8 @@ resources:
 - name: "featured-image"
   src: "featured-image.png"
 
-tags: ["C#", "LINQ", "Data Query"]
-categories: ["C#", "Advanced Concepts"]
+tags: ["CSharp", "LINQ", "Data Query"]
+categories: ["CSharp", "Advanced Concepts"]
 
 lightgallery: true
 ---
