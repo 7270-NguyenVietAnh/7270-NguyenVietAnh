@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><script src="/7270-NguyenVietAnh/7270-NguyenVietAnh/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=7270-NguyenVietAnh/7270-NguyenVietAnh/livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>LINQ in C# - Nguyễn Việt Anh Blog</title><meta name="Description" content="Master Language Integrated Query (LINQ) in C# for efficient data querying and manipulation."><meta property="og:url" content="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-linq/">
+  <meta property="og:site_name" content="Nguyễn Việt Anh Blog">
+  <meta property="og:title" content="LINQ in C#">
+  <meta property="og:description" content="Master Language Integrated Query (LINQ) in C# for efficient data querying and manipulation.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-27T13:00:00+08:00">
+    <meta property="article:modified_time" content="2024-12-27T13:00:00+08:00">
+    <meta property="article:tag" content="C#">
+    <meta property="article:tag" content="LINQ">
+    <meta property="article:tag" content="Data Query">
+    <meta property="og:image" content="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-linq/featured-image.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-linq/featured-image.png">
+  <meta name="twitter:title" content="LINQ in C#">
+  <meta name="twitter:description" content="Master Language Integrated Query (LINQ) in C# for efficient data querying and manipulation.">
+<meta name="application-name" content="My KeepIt site">
+<meta name="apple-mobile-web-app-title" content="My KeepIt site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-linq/" /><link rel="prev" href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-basics/" /><link rel="next" href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-async/" /><link rel="stylesheet" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/css/style.min.css"><link rel="stylesheet" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "LINQ in C#",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/7270-NguyenVietAnh\/7270-NguyenVietAnh\/posts\/csharp-linq\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/localhost:1313\/7270-NguyenVietAnh\/7270-NguyenVietAnh\/posts\/csharp-linq\/featured-image.png",
+                            "width":  900 ,
+                            "height":  550 
+                        }],"genre": "posts","keywords": "C#, LINQ, Data Query","wordcount":  280 ,
+        "url": "http:\/\/localhost:1313\/7270-NguyenVietAnh\/7270-NguyenVietAnh\/posts\/csharp-linq\/","datePublished": "2024-12-27T13:00:00+08:00","dateModified": "2024-12-27T13:00:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "ChatGPT"
+            },"description": "Master Language Integrated Query (LINQ) in C# for efficient data querying and manipulation."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Home</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/aboutme/"> About Me </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/"> Posts </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/"> Tags </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Home</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/aboutme/" title="">About Me</a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/" title="">Posts</a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/" title="">Tags</a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">LINQ in C#</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://chatgpt.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ChatGPT</a>
+</span>&nbsp;<span class="post-category">included in <a href=""><i class="far fa-folder fa-fw" aria-hidden="true"></i></a>&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Advanced Concepts</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-12-27">2024-12-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;280 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/7270-NguyenVietAnh/7270-NguyenVietAnh/svg/loading.min.svg"
+        data-src="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-linq/featured-image.png"
+        data-srcset="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-linq/featured-image.png, /7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-linq/featured-image.png 1.5x, /7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-linq/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-linq/featured-image.png"
+        title="Master Language Integrated Query (LINQ) in C# for efficient data querying and manipulation." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-linq">What is LINQ?</a></li>
+    <li><a href="#linq-query-syntax">LINQ Query Syntax</a>
+      <ul>
+        <li><a href="#basic-query">Basic Query:</a></li>
+      </ul>
+    </li>
+    <li><a href="#linq-method-syntax">LINQ Method Syntax</a></li>
+    <li><a href="#common-linq-operations">Common LINQ Operations</a>
+      <ul>
+        <li><a href="#1-filtering-with-where">1. Filtering with Where:</a></li>
+        <li><a href="#2-transforming-with-select">2. Transforming with Select:</a></li>
+        <li><a href="#3-sorting-with-orderby">3. Sorting with OrderBy:</a></li>
+        <li><a href="#4-grouping-with-groupby">4. Grouping with GroupBy:</a></li>
+      </ul>
+    </li>
+    <li><a href="#linq-with-databases">LINQ with Databases</a></li>
+    <li><a href="#advantages-of-linq">Advantages of LINQ</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="linq-in-c">LINQ in C#</h1>
+<p>LINQ (Language Integrated Query) is a powerful feature in C# that allows you to query and manipulate data from various sources using a consistent syntax.</p>
+<h2 id="what-is-linq">What is LINQ?</h2>
+<p>LINQ provides a uniform way to query data from different sources such as arrays, lists, databases, and XML documents.</p>
+<h2 id="linq-query-syntax">LINQ Query Syntax</h2>
+<h3 id="basic-query">Basic Query:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Linq;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span>[] numbers = { <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span> };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> result = <span style="color:#66d9ef">from</span> num <span style="color:#66d9ef">in</span> numbers
+</span></span><span style="display:flex;"><span>             <span style="color:#66d9ef">where</span> num &gt; <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>             <span style="color:#66d9ef">select</span> num;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> item <span style="color:#66d9ef">in</span> result) {
+</span></span><span style="display:flex;"><span>    Console.WriteLine(item);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Output: 3, 4, 5</span>
+</span></span></code></pre></div><h2 id="linq-method-syntax">LINQ Method Syntax</h2>
+<p>Method syntax is more flexible and allows chaining of operations.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> result = numbers
+</span></span><span style="display:flex;"><span>    .Where(num =&gt; num &gt; <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>    .Select(num =&gt; num * <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>    .ToList();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> item <span style="color:#66d9ef">in</span> result) {
+</span></span><span style="display:flex;"><span>    Console.WriteLine(item);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Output: 6, 8, 10</span>
+</span></span></code></pre></div><h2 id="common-linq-operations">Common LINQ Operations</h2>
+<h3 id="1-filtering-with-where">1. Filtering with Where:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> adults = people.Where(p =&gt; p.Age &gt;= <span style="color:#ae81ff">18</span>).ToList();
+</span></span></code></pre></div><h3 id="2-transforming-with-select">2. Transforming with Select:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> names = people.Select(p =&gt; p.Name).ToList();
+</span></span></code></pre></div><h3 id="3-sorting-with-orderby">3. Sorting with OrderBy:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> sorted = people.OrderBy(p =&gt; p.Age).ToList();
+</span></span></code></pre></div><h3 id="4-grouping-with-groupby">4. Grouping with GroupBy:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> grouped = people.GroupBy(p =&gt; p.City);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">in</span> grouped) {
+</span></span><span style="display:flex;"><span>    Console.WriteLine(<span style="color:#e6db74">$&#34;City: {group.Key}&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> person <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">group</span>) {
+</span></span><span style="display:flex;"><span>        Console.WriteLine(<span style="color:#e6db74">$&#34;  {person.Name}&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="linq-with-databases">LINQ with Databases</h2>
+<p>LINQ can query databases through Entity Framework:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> users = dbContext.Users
+</span></span><span style="display:flex;"><span>    .Where(u =&gt; u.IsActive)
+</span></span><span style="display:flex;"><span>    .OrderBy(u =&gt; u.CreatedDate)
+</span></span><span style="display:flex;"><span>    .ToList();
+</span></span></code></pre></div><h2 id="advantages-of-linq">Advantages of LINQ</h2>
+<ol>
+<li><strong>Readable</strong>: LINQ syntax is clean and easy to understand.</li>
+<li><strong>Type-Safe</strong>: Compile-time type checking prevents errors.</li>
+<li><strong>Composable</strong>: Operations can be chained together.</li>
+<li><strong>Efficient</strong>: LINQ optimizes queries for better performance.</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>LINQ is an essential feature for C# developers that makes data querying and manipulation simpler and more expressive. Mastering LINQ will significantly improve your productivity and code quality.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-12-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-linq/" data-title="LINQ in C#" data-hashtags="C#,LINQ,Data Query"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-linq/" data-hashtag="C#"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-linq/" data-title="LINQ in C#"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-linq/" data-title="LINQ in C#"><i data-svg-src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-linq/" data-title="LINQ in C#"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href=""></a>,&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/linq/">LINQ</a>,&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/data-query/">Data Query</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-basics/" class="prev" rel="prev" title=".NET Basics"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>.NET Basics</a>
+            <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-async/" class="next" rel="next" title="Asynchronous Programming in C#">Asynchronous Programming in C#<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.150.1">Hugo</a> | Theme - <a href="https://github.com/Fastbyte01/KeepIt" target="_blank" rel="noopener noreffer" title="KeepIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> KeepIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lightgallery/lightgallery.min.css"><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/sharer/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"lightgallery":true,"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/js/theme.min.js"></script></body>
+</html>

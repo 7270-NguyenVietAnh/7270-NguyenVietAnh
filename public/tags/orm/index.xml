@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ORM on Nguyễn Việt Anh Blog</title>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/orm/</link>
+    <description>Recent content in ORM on Nguyễn Việt Anh Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Dec 2024 16:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/orm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entity Framework Core in .NET</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/</link>
+      <pubDate>Fri, 27 Dec 2024 16:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/</guid>
+      <description>&lt;h1 id=&#34;entity-framework-core-in-net&#34;&gt;Entity Framework Core in .NET&lt;/h1&gt;&#xA;&lt;p&gt;Entity Framework Core (EF Core) is a lightweight, extensible, and open-source Object-Relational Mapping (ORM) framework for .NET. It simplifies database operations by allowing you to work with database objects as .NET objects.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-entity-framework-core&#34;&gt;What is Entity Framework Core?&lt;/h2&gt;&#xA;&lt;p&gt;EF Core enables developers to work with databases using C# objects instead of writing raw SQL queries. It supports multiple database providers including SQL Server, PostgreSQL, SQLite, and MySQL.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

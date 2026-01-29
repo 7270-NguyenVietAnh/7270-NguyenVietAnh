@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Framework on Nguyễn Việt Anh Blog</title>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/framework/</link>
+    <description>Recent content in Framework on Nguyễn Việt Anh Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Dec 2024 14:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/framework/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.NET Basics</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-basics/</link>
+      <pubDate>Fri, 27 Dec 2024 14:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-basics/</guid>
+      <description>&lt;h1 id=&#34;introduction-to-net&#34;&gt;Introduction to .NET&lt;/h1&gt;&#xA;&lt;p&gt;.NET is a free, open-source, cross-platform framework developed by Microsoft for building web, desktop, mobile, and cloud applications. It provides a unified platform for developing applications with C#, Visual Basic, or F#.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-net&#34;&gt;What is .NET?&lt;/h2&gt;&#xA;&lt;p&gt;.NET is a runtime and library framework that enables developers to build applications that run on Windows, Linux, and macOS. It comes in several versions:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;.NET Framework&lt;/strong&gt;: The original Windows-only framework.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;.NET Core&lt;/strong&gt;: A cross-platform, open-source version.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;.NET 5+&lt;/strong&gt;: The unified platform combining Core and Framework.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;key-components&#34;&gt;Key Components&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Common Language Runtime (CLR)&lt;/strong&gt;: Manages code execution, memory, and exceptions.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Base Class Library (BCL)&lt;/strong&gt;: Provides pre-built functionality for common tasks.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Language Support&lt;/strong&gt;: C#, Visual Basic, F#, and others.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;setting-up-net-environment&#34;&gt;Setting Up .NET Environment&lt;/h2&gt;&#xA;&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;&#xA;&lt;p&gt;Download and install .NET SDK from &lt;a href=&#34;https://dotnet.microsoft.com&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;dotnet.microsoft.com&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

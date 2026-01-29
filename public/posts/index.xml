@@ -3,7 +3,7 @@
         <title>All Posts - Nguyễn Việt Anh Blog</title>
         <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/</link>
         <description>All Posts | Nguyễn Việt Anh Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2024 20:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 27 Dec 2024 17:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Java Basics</title>
     <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/java-basic/</link>
     <pubDate>Thu, 26 Dec 2024 12:00:00 &#43;0800</pubDate>
@@ -180,6 +180,25 @@
 <hr>
 <h2 id="garbage-collection-gc">Garbage Collection (GC)</h2>
 <p>Garbage Collection automatically frees memory that is no longer referenced, helping reduce the risk of memory leaks.</p>]]></description>
+</item>
+<item>
+    <title>C# Basics</title>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-basics/</link>
+    <pubDate>Fri, 27 Dec 2024 10:00:00 &#43;0800</pubDate>
+    <author>ChatGPT</author>
+    <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-basics/</guid>
+    <description><![CDATA[<h1 id="introduction-to-c">Introduction to C#</h1>
+<p>C# is a modern, powerful, and object-oriented programming language developed by Microsoft. It is widely used for developing desktop applications, web applications, games, and cloud services.</p>
+<h2 id="features-of-c">Features of C#</h2>
+<ol>
+<li><strong>Object-Oriented</strong>: C# fully supports object-oriented programming with classes, inheritance, polymorphism, and encapsulation.</li>
+<li><strong>Type-Safe</strong>: C# is a strongly typed language, preventing many common programming errors.</li>
+<li><strong>Garbage Collection</strong>: Automatic memory management through garbage collection.</li>
+<li><strong>Rich Framework</strong>: .NET Framework provides extensive libraries for various development tasks.</li>
+<li><strong>Cross-Platform</strong>: With .NET Core and .NET 5+, C# can run on Windows, Linux, and macOS.</li>
+</ol>
+<h2 id="basic-structure-of-a-c-program">Basic Structure of a C# Program</h2>
+<p>Below is a simple C# program:</p>]]></description>
 </item>
 </channel>
 </rss>

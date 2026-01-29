@@ -56,6 +56,33 @@ To become a professional Backend Developer specializing in **C#/.NET**, focusing
 
 ---
 
+## 💼 Professional Experience
+
+### Backend Developer Intern  
+**Global Insurance Corporation (GIC)**  
+*April 21, 2025 – June 16, 2025*
+
+- Gained hands-on experience with C# programming and applied theoretical knowledge to real backend systems.
+- Debugged and fixed system issues using logging and debugging tools.
+- Learned and understood the business workflow of property insurance systems, including policy issuance, claims processing, and reinsurance.
+- Worked with core business modules such as SP, Policy Administration, and Claim Management.
+- Developed problem-solving skills by analyzing logs, checking data consistency, and proposing solutions.
+- Used internal project management and reporting tools, including dashboards and contract printing systems.
+
+---
+
+### Backend Developer Fresher  
+**Global Insurance Corporation (GIC)**  
+*August 25, 2025 – January 30, 2026*
+
+- Enhanced understanding of company systems and insurance products to better support business requirements.
+- Implemented new features and system enhancements based on internal specifications.
+- Collaborated closely with team members and had direct interaction with customers.
+- Completed assigned tasks on time while following team development processes and coding standards.
+
+---
+
+
 ## 🎓 Certifications
 
 <!-- ### 🌐 Network Basics Badge  

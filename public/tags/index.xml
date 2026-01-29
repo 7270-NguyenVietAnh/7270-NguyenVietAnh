@@ -6,8 +6,134 @@
     <description>Recent content in Tags on Nguyễn Việt Anh Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Dec 2024 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Dec 2024 17:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.NET</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/.net/</link>
+      <pubDate>Fri, 27 Dec 2024 17:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/.net/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ASP.NET Core</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/asp.net-core/</link>
+      <pubDate>Fri, 27 Dec 2024 17:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/asp.net-core/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web Development</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/web-development/</link>
+      <pubDate>Fri, 27 Dec 2024 17:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/web-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/database/</link>
+      <pubDate>Fri, 27 Dec 2024 16:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Entity Framework</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/entity-framework/</link>
+      <pubDate>Fri, 27 Dec 2024 16:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/entity-framework/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ORM</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/orm/</link>
+      <pubDate>Fri, 27 Dec 2024 16:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/orm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dependency Injection</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/dependency-injection/</link>
+      <pubDate>Fri, 27 Dec 2024 15:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/dependency-injection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Design Pattern</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/design-pattern/</link>
+      <pubDate>Fri, 27 Dec 2024 15:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/design-pattern/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Framework</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/framework/</link>
+      <pubDate>Fri, 27 Dec 2024 14:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/framework/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C#</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/c%23/</link>
+      <pubDate>Fri, 27 Dec 2024 13:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/c%23/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Query</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/data-query/</link>
+      <pubDate>Fri, 27 Dec 2024 13:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/data-query/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LINQ</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/linq/</link>
+      <pubDate>Fri, 27 Dec 2024 13:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/linq/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Async</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/async/</link>
+      <pubDate>Fri, 27 Dec 2024 12:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/async/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Asynchronous Programming</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/asynchronous-programming/</link>
+      <pubDate>Fri, 27 Dec 2024 12:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/asynchronous-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CSharp</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/csharp/</link>
+      <pubDate>Fri, 27 Dec 2024 12:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/csharp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Object-Oriented Programming</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/object-oriented-programming/</link>
+      <pubDate>Fri, 27 Dec 2024 11:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/object-oriented-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OOP</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/oop/</link>
+      <pubDate>Fri, 27 Dec 2024 11:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/oop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/programming/</link>
+      <pubDate>Fri, 27 Dec 2024 10:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/programming/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Garbage Collection</title>
       <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/garbage-collection/</link>
@@ -65,13 +191,6 @@
       <description></description>
     </item>
     <item>
-      <title>Asynchronous Programming</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/asynchronous-programming/</link>
-      <pubDate>Thu, 26 Dec 2024 17:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/asynchronous-programming/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Java 8</title>
       <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/java-8/</link>
       <pubDate>Thu, 26 Dec 2024 16:00:00 +0800</pubDate>
@@ -97,13 +216,6 @@
       <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/closures/</link>
       <pubDate>Thu, 26 Dec 2024 15:00:00 +0800</pubDate>
       <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/closures/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Object-Oriented Programming</title>
-      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/object-oriented-programming/</link>
-      <pubDate>Thu, 26 Dec 2024 14:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/object-oriented-programming/</guid>
       <description></description>
     </item>
   </channel>

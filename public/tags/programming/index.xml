@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Nguyễn Việt Anh Blog</title>
+    <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/programming/</link>
+    <description>Recent content in Programming on Nguyễn Việt Anh Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Dec 2024 10:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C# Basics</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-basics/</link>
+      <pubDate>Fri, 27 Dec 2024 10:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/csharp-basics/</guid>
+      <description>&lt;h1 id=&#34;introduction-to-c&#34;&gt;Introduction to C#&lt;/h1&gt;&#xA;&lt;p&gt;C# is a modern, powerful, and object-oriented programming language developed by Microsoft. It is widely used for developing desktop applications, web applications, games, and cloud services.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features-of-c&#34;&gt;Features of C#&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Object-Oriented&lt;/strong&gt;: C# fully supports object-oriented programming with classes, inheritance, polymorphism, and encapsulation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Type-Safe&lt;/strong&gt;: C# is a strongly typed language, preventing many common programming errors.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Garbage Collection&lt;/strong&gt;: Automatic memory management through garbage collection.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rich Framework&lt;/strong&gt;: .NET Framework provides extensive libraries for various development tasks.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cross-Platform&lt;/strong&gt;: With .NET Core and .NET 5+, C# can run on Windows, Linux, and macOS.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;basic-structure-of-a-c-program&#34;&gt;Basic Structure of a C# Program&lt;/h2&gt;&#xA;&lt;p&gt;Below is a simple C# program:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

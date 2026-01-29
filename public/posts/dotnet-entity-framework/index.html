@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><script src="/7270-NguyenVietAnh/7270-NguyenVietAnh/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=7270-NguyenVietAnh/7270-NguyenVietAnh/livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Entity Framework Core in .NET - Nguyễn Việt Anh Blog</title><meta name="Description" content="Learn Entity Framework Core, a modern ORM for data access in .NET applications."><meta property="og:url" content="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/">
+  <meta property="og:site_name" content="Nguyễn Việt Anh Blog">
+  <meta property="og:title" content="Entity Framework Core in .NET">
+  <meta property="og:description" content="Learn Entity Framework Core, a modern ORM for data access in .NET applications.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-27T16:00:00+08:00">
+    <meta property="article:modified_time" content="2024-12-27T16:00:00+08:00">
+    <meta property="article:tag" content=".NET">
+    <meta property="article:tag" content="Entity Framework">
+    <meta property="article:tag" content="Database">
+    <meta property="article:tag" content="ORM">
+    <meta property="og:image" content="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/featured-image.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/featured-image.png">
+  <meta name="twitter:title" content="Entity Framework Core in .NET">
+  <meta name="twitter:description" content="Learn Entity Framework Core, a modern ORM for data access in .NET applications.">
+<meta name="application-name" content="My KeepIt site">
+<meta name="apple-mobile-web-app-title" content="My KeepIt site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/" /><link rel="prev" href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-aspnet-core/" /><link rel="next" href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-dependency-injection/" /><link rel="stylesheet" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/css/style.min.css"><link rel="stylesheet" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Entity Framework Core in .NET",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/7270-NguyenVietAnh\/7270-NguyenVietAnh\/posts\/dotnet-entity-framework\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/localhost:1313\/7270-NguyenVietAnh\/7270-NguyenVietAnh\/posts\/dotnet-entity-framework\/featured-image.png",
+                            "width":  480 ,
+                            "height":  360 
+                        }],"genre": "posts","keywords": ".NET, Entity Framework, Database, ORM","wordcount":  424 ,
+        "url": "http:\/\/localhost:1313\/7270-NguyenVietAnh\/7270-NguyenVietAnh\/posts\/dotnet-entity-framework\/","datePublished": "2024-12-27T16:00:00+08:00","dateModified": "2024-12-27T16:00:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "ChatGPT"
+            },"description": "Learn Entity Framework Core, a modern ORM for data access in .NET applications."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Home</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/aboutme/"> About Me </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/"> Posts </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/"> Tags </a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" title="Nguyễn Việt Anh Blog">Home</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/aboutme/" title="">About Me</a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/" title="">Posts</a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/" title="">Tags</a><a class="menu-item" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Entity Framework Core in .NET</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://chatgpt.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ChatGPT</a>
+</span>&nbsp;<span class="post-category">included in <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/.net/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>.NET</a>&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Advanced Concepts</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-12-27">2024-12-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;424 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/7270-NguyenVietAnh/7270-NguyenVietAnh/svg/loading.min.svg"
+        data-src="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/featured-image.png"
+        data-srcset="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/featured-image.png, /7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/featured-image.png 1.5x, /7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/featured-image.png"
+        title="Learn Entity Framework Core, a modern ORM for data access in .NET applications." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-entity-framework-core">What is Entity Framework Core?</a></li>
+    <li><a href="#creating-models">Creating Models</a></li>
+    <li><a href="#database-context">Database Context</a></li>
+    <li><a href="#basic-crud-operations">Basic CRUD Operations</a>
+      <ul>
+        <li><a href="#create">Create</a></li>
+        <li><a href="#read">Read</a></li>
+        <li><a href="#update">Update</a></li>
+        <li><a href="#delete">Delete</a></li>
+      </ul>
+    </li>
+    <li><a href="#relationships">Relationships</a>
+      <ul>
+        <li><a href="#one-to-many">One-to-Many</a></li>
+      </ul>
+    </li>
+    <li><a href="#querying-with-linq">Querying with LINQ</a></li>
+    <li><a href="#migrations">Migrations</a></li>
+    <li><a href="#key-advantages">Key Advantages</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="entity-framework-core-in-net">Entity Framework Core in .NET</h1>
+<p>Entity Framework Core (EF Core) is a lightweight, extensible, and open-source Object-Relational Mapping (ORM) framework for .NET. It simplifies database operations by allowing you to work with database objects as .NET objects.</p>
+<h2 id="what-is-entity-framework-core">What is Entity Framework Core?</h2>
+<p>EF Core enables developers to work with databases using C# objects instead of writing raw SQL queries. It supports multiple database providers including SQL Server, PostgreSQL, SQLite, and MySQL.</p>
+<h2 id="creating-models">Creating Models</h2>
+<p>Define your data models:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> Id { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> Name { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> Email { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> DateTime CreatedDate { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Post</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> Id { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> Title { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> Content { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> UserId { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> User User { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="database-context">Database Context</h2>
+<p>Create a DbContext to manage database operations:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AppDbContext</span> : DbContext {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> DbSet&lt;User&gt; Users { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> DbSet&lt;Post&gt; Posts { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> OnConfiguring(DbContextOptionsBuilder options) {
+</span></span><span style="display:flex;"><span>        options.UseSqlServer(<span style="color:#e6db74">&#34;Server=localhost;Database=mydb;Trusted_Connection=true;&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="basic-crud-operations">Basic CRUD Operations</h2>
+<h3 id="create">Create</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> db = <span style="color:#66d9ef">new</span> AppDbContext()) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> user = <span style="color:#66d9ef">new</span> User { Name = <span style="color:#e6db74">&#34;John&#34;</span>, Email = <span style="color:#e6db74">&#34;john@example.com&#34;</span> };
+</span></span><span style="display:flex;"><span>    db.Users.Add(user);
+</span></span><span style="display:flex;"><span>    db.SaveChanges();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="read">Read</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> db = <span style="color:#66d9ef">new</span> AppDbContext()) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> users = db.Users.ToList();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> user = db.Users.FirstOrDefault(u =&gt; u.Id == <span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="update">Update</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> db = <span style="color:#66d9ef">new</span> AppDbContext()) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> user = db.Users.Find(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>    user.Name = <span style="color:#e6db74">&#34;Jane&#34;</span>;
+</span></span><span style="display:flex;"><span>    db.SaveChanges();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="delete">Delete</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> db = <span style="color:#66d9ef">new</span> AppDbContext()) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> user = db.Users.Find(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>    db.Users.Remove(user);
+</span></span><span style="display:flex;"><span>    db.SaveChanges();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="relationships">Relationships</h2>
+<h3 id="one-to-many">One-to-Many</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Author</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> Id { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> Name { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> List&lt;Book&gt; Books { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Book</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> Id { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> Title { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> AuthorId { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Author Author { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="querying-with-linq">Querying with LINQ</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> recentPosts = db.Posts
+</span></span><span style="display:flex;"><span>    .Where(p =&gt; p.CreatedDate &gt; DateTime.Now.AddMonths(-<span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span>    .OrderByDescending(p =&gt; p.CreatedDate)
+</span></span><span style="display:flex;"><span>    .ToList();
+</span></span></code></pre></div><h2 id="migrations">Migrations</h2>
+<p>Entity Framework provides migrations to manage database schema changes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dotnet ef migrations add InitialCreate
+</span></span><span style="display:flex;"><span>dotnet ef database update
+</span></span></code></pre></div><h2 id="key-advantages">Key Advantages</h2>
+<ol>
+<li><strong>Type-Safe</strong>: Compile-time checking of database queries.</li>
+<li><strong>Productivity</strong>: Less boilerplate code compared to raw SQL.</li>
+<li><strong>Flexibility</strong>: Works with multiple database providers.</li>
+<li><strong>Relationships</strong>: Automatic handling of foreign keys and relationships.</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>Entity Framework Core is an essential tool for .NET developers working with databases. It provides a clean, abstracted way to interact with data, making applications more maintainable and testable.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-12-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/" data-title="Entity Framework Core in .NET" data-hashtags=".NET,Entity Framework,Database,ORM"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/" data-hashtag=".NET"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/" data-title="Entity Framework Core in .NET"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/" data-title="Entity Framework Core in .NET"><i data-svg-src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-entity-framework/" data-title="Entity Framework Core in .NET"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/.net/">.NET</a>,&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/entity-framework/">Entity Framework</a>,&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/database/">Database</a>,&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/tags/orm/">ORM</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-aspnet-core/" class="prev" rel="prev" title="ASP.NET Core Web Development"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ASP.NET Core Web Development</a>
+            <a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/posts/dotnet-dependency-injection/" class="next" rel="next" title="Dependency Injection in .NET">Dependency Injection in .NET<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.150.1">Hugo</a> | Theme - <a href="https://github.com/Fastbyte01/KeepIt" target="_blank" rel="noopener noreffer" title="KeepIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> KeepIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/7270-NguyenVietAnh/7270-NguyenVietAnh/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lightgallery/lightgallery.min.css"><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/lib/sharer/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"lightgallery":true,"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/7270-NguyenVietAnh/7270-NguyenVietAnh/js/theme.min.js"></script></body>
+</html>

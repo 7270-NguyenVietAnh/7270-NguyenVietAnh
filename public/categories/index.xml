@@ -6,13 +6,34 @@
     <description>Recent content in Categories on Nguyễn Việt Anh Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Dec 2024 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Dec 2024 17:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.NET</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/.net/</link>
+      <pubDate>Fri, 27 Dec 2024 17:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/.net/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Advanced Concepts</title>
       <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/</link>
-      <pubDate>Thu, 26 Dec 2024 20:00:00 +0800</pubDate>
+      <pubDate>Fri, 27 Dec 2024 17:00:00 +0800</pubDate>
       <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/advanced-concepts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C#</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/c%23/</link>
+      <pubDate>Fri, 27 Dec 2024 13:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/c%23/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CSharp</title>
+      <link>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/csharp/</link>
+      <pubDate>Fri, 27 Dec 2024 12:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/7270-NguyenVietAnh/7270-NguyenVietAnh/categories/csharp/</guid>
       <description></description>
     </item>
     <item>
